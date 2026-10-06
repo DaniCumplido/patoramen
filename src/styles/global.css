@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: var(--c-background);
+    color-scheme: dark;
+    scroll-behavior: auto; /* native scroll physics untouched; no smooth-scroll libs */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background font-sans text-ink antialiased;
+    overflow-x: clip;
+    min-height: 100vh;
+  }
+  ::selection {
+    background: var(--c-primary);
+    color: var(--c-on-primary);
+  }
+  :focus-visible {
+    outline: 2px solid var(--c-primary);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  img {
+    @apply block max-w-full;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-serif font-light;
+  }
+  [lang='zh-Hans'],
+  .font-cjk {
+    font-family: 'Noto Serif SC', 'Noto Serif JP', serif;
+  }
+  [lang='ja'] {
+    font-family: 'Noto Serif JP', 'Noto Serif SC', serif;
+  }
+  /* date / select popups in dark */
+  input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(0.85) sepia(0.4) saturate(2);
+    cursor: pointer;
+  }
+  option,
+  optgroup {
+    background: var(--c-surface);
+    color: var(--c-text);
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-3 font-sans text-[0.72rem] font-medium uppercase tracking-[0.28em] text-secondary;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply block h-px w-8 bg-secondary/70;
+  }
+  .section-pad {
+    @apply px-5 py-24 sm:px-8 md:py-36 lg:px-14;
+  }
+  .container-x {
+    @apply mx-auto w-full max-w-[1440px];
+  }
+  .kanji-v {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    @apply pointer-events-none select-none font-cjk font-light leading-none text-ink;
+    letter-spacing: 0.04em;
+    will-change: transform;
+  }
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full px-7 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.2em] transition-[color,background-color,border-color,box-shadow,transform] duration-500;
+  }
+  .btn-primary {
+    @apply bg-primary text-on-primary shadow-[0_0_0_1px_rgba(224,169,59,0.5),0_10px_40px_-10px_rgba(224,169,59,0.55)];
+  }
+  .btn-primary::after {
+    content: '';
+    @apply absolute inset-0 -z-0 translate-y-full bg-lacquer transition-transform duration-500 ease-out;
+  }
+  .btn-primary > * {
+    @apply relative z-10;
+  }
+  .btn-primary:hover,
+  .btn-primary:focus-visible {
+    color: var(--c-on-lacquer);
+    box-shadow: 0 0 0 1px var(--c-primary), 0 0 36px -4px rgba(224, 169, 59, 0.6);
+  }
+  .btn-primary:hover::after,
+  .btn-primary:focus-visible::after {
+    @apply translate-y-0;
+  }
+  .btn-ghost {
+    @apply border border-ink/30 bg-background/20 text-ink backdrop-blur-sm;
+  }
+  .btn-ghost:hover,
+  .btn-ghost:focus-visible {
+    @apply border-primary text-primary;
+    box-shadow: 0 0 28px -6px rgba(224, 169, 59, 0.5);
+  }
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: -50%;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0.09;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+  .gold-text {
+    @apply italic text-primary;
+    font-weight: 400;
+  }
+}
+
+/* line mask used by the GSAP heading reveals */
+.line-mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.2s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.2s !important;
+  }
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+.check:checked {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2315100D' stroke-width='2.5'%3E%3Cpath d='M3 8.5l3.2 3L13 4.5'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+}

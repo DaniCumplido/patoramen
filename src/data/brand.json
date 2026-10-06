@@ -1,0 +1,1059 @@
+{
+  "brandName": "Pato Ramen · 缘味",
+  "tagline": "Caldo lento. Pato lacado. Fuego con memoria.",
+  "industry": "Restaurante · Ramen y pato asado (schema.org/Restaurant)",
+  "valueProposition": "Ramen de caldo de doce horas, pato lacado y dim sum al vapor en una sala de madera y penumbra dorada, en el corazón del Eixample.",
+  "artDirection": {
+    "visualMood": "Claroscuro cinemático de taberna asiática: carbón cálido, vapor a contraluz, brillo de caldo dorado y destellos de laca roja. Mucho aire negativo, como una revista gastronómica impresa en papel oscuro.",
+    "imageryStyle": "Full-bleed macro con grano analógico, profundidad de campo corta, contraste dramático y viñeteado cálido. Las imágenes ocupan el marco; la interfaz susurra a su alrededor.",
+    "typographyStyle": "Cormorant Garamond de gran formato con contraste de escala extremo y palabras clave en cursiva dorada; Plus Jakarta Sans para texto y etiquetas en versalitas con tracking; Noto Serif SC/JP como caligrafía decorativa vertical (缘味) en segundo plano."
+  },
+  "colors": {
+    "primary": "#E0A93B",
+    "secondary": "#C08850",
+    "background": "#15100D",
+    "surface": "#201915",
+    "text": "#F4EADB",
+    "accent": "#EE5A4B",
+    "extra": {
+      "textMuted": "#BDAE98",
+      "border": "#3A2E26",
+      "lacquerRed": "#C8372D",
+      "onLacquerRed": "#FFF6EC",
+      "onPrimary": "#15100D",
+      "backgroundDeep": "#0E0B09",
+      "woodWarm": "#8A5A34"
+    },
+    "contrast": {
+      "_note": "Ratios WCAG 2.x calculados con luminancia relativa (verificados con script). Todos >= 4.5.",
+      "text/background": 15.86,
+      "text/surface": 14.56,
+      "textMuted/background": 8.7,
+      "textMuted/surface": 7.98,
+      "primary/background": 8.91,
+      "primary/surface": 8.18,
+      "secondary/background": 6.19,
+      "secondary/surface": 5.68,
+      "accent/background": 5.58,
+      "accent/surface": 5.12,
+      "onPrimary/primary": 8.91,
+      "onLacquerRed/lacquerRed": 4.86
+    }
+  },
+  "fonts": {
+    "heading": "Cormorant Garamond",
+    "body": "Plus Jakarta Sans",
+    "accentCjk": "Noto Serif SC",
+    "accentCjkAlt": "Noto Serif JP",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@300;400;600&family=Noto+Serif+JP:wght@300;400;600&display=swap",
+    "scale": {
+      "heroTitle": "clamp(3.25rem, 9vw, 9rem)",
+      "h2": "clamp(2.25rem, 5vw, 4.5rem)",
+      "eyebrow": "0.72rem, uppercase, tracking 0.28em",
+      "kanjiDecor": "clamp(8rem, 22vw, 26rem)"
+    }
+  },
+  "assets": {
+    "heroImage": "https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "storyImage": "https://images.unsplash.com/photo-1790102563096-64a25de9e9c0?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "gallery": [
+      "https://images.unsplash.com/photo-1765441012353-10fb4701a276?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "https://images.unsplash.com/photo-1773559250354-0d7281984a89?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "https://images.unsplash.com/photo-1601351841251-766245326eee?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "https://images.unsplash.com/photo-1617870314635-fc819547ec11?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "https://images.unsplash.com/photo-1563245370-63ffc97abdbd?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "https://images.unsplash.com/photo-1734313276354-75c96b3c0c36?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "https://images.unsplash.com/photo-1707202282188-f8d03b2791b5?auto=format&fit=crop&w=2400&q=80&fm=webp"
+    ],
+    "galleryAlt": [
+      "Pato lacado de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta, en penumbra cálida",
+      "Patos y carnes lacadas colgando tras un cristal empañado, iluminados por focos cálidos en la noche",
+      "Barra de izakaya con farolillos de papel rojos y cocineros trabajando bajo una luz ámbar",
+      "Vapor ascendiendo de una cesta de bambú con dumplings, junto a un cuenco de salsa oscura con cilantro, a contraluz",
+      "Callejón nocturno con farolillos rojos y rótulos iluminados",
+      "Shumai dorados dentro de una vaporera negra sobre cestas de bambú apiladas",
+      "Fideos de ramen recién levantados con palillos sobre un cuenco con huevo marinado de yema líquida",
+      "Barra nocturna con farolillos japoneses encendidos y botellas al fondo"
+    ],
+    "decorativeImages": {
+      "nightStreet": "https://images.unsplash.com/photo-1740834563801-48f83d978618?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "carving": "https://images.unsplash.com/photo-1765743691388-6a5608004b9c?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "shreddedDuck": "https://images.unsplash.com/photo-1782242984132-454270d6dc35?auto=format&fit=crop&w=2400&q=80&fm=webp"
+    },
+    "decorativeImagesAlt": {
+      "nightStreet": "Esquina de una calle nocturna con un local japonés iluminado y clientes esperando mesa",
+      "carving": "Cocinero con guantes azules trinchando un pato asado junto a una pared de madera clara",
+      "shreddedDuck": "Pato asado deshilachado en una fuente blanca sobre mesa de madera"
+    }
+  },
+  "hero": {
+    "badge": "Carrer de Villarroel · Barcelona",
+    "title": [
+      {
+        "text": "Caldo lento,",
+        "emphasis": false,
+        "break": true
+      },
+      {
+        "text": "pato crujiente",
+        "emphasis": true,
+        "break": true
+      },
+      {
+        "text": "y tiempo",
+        "emphasis": false,
+        "break": false
+      },
+      {
+        "text": "en el tazón.",
+        "emphasis": true,
+        "break": false
+      }
+    ],
+    "titlePlain": "Caldo lento, pato crujiente y tiempo en el tazón.",
+    "subtitle": "Doce horas de hueso y fuego bajo, un pato lacado hasta que cruje como papel de arroz y una barra donde el vapor se queda a cenar contigo.",
+    "primaryCta": "Reservar mesa",
+    "primaryCtaHref": "#reservas",
+    "secondaryCta": "Ver la carta",
+    "secondaryCtaHref": "#carta",
+    "image": "https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "imageAlt": "Cuenco negro de ramen humeante con chashu, huevo marinado, nori y espinacas sobre mesa de madera cálida",
+    "scrollHint": "Desliza",
+    "kanjiVertical": "缘味"
+  },
+  "seo": {
+    "title": "Pato Ramen · 缘味 | Ramen y pato asado en Barcelona",
+    "description": "Ramen de caldo lento, pato lacado y dim sum al vapor en Carrer de Villarroel, Barcelona. Reserva tu mesa en una sala de madera, vapor y penumbra dorada.",
+    "ogImage": "https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "ogImageAlt": "Cuenco de ramen humeante en Pato Ramen, Barcelona",
+    "locale": "es_ES",
+    "lang": "es",
+    "siteUrl": "https://www.example.com",
+    "siteUrlNote": "PLACEHOLDER: sustituir por el dominio final",
+    "themeColor": "#15100D",
+    "keywords": [
+      "ramen Barcelona",
+      "pato lacado",
+      "dim sum Barcelona",
+      "restaurante asiático Eixample",
+      "Carrer de Villarroel"
+    ],
+    "schemaType": "Restaurant",
+    "twitterCard": "summary_large_image"
+  },
+  "nav": {
+    "brandHref": "#inicio",
+    "items": [
+      {
+        "label": "Inicio",
+        "href": "#inicio"
+      },
+      {
+        "label": "Platos",
+        "href": "#platos"
+      },
+      {
+        "label": "Historia",
+        "href": "#historia"
+      },
+      {
+        "label": "Carta",
+        "href": "#carta"
+      },
+      {
+        "label": "Opiniones",
+        "href": "#opiniones"
+      },
+      {
+        "label": "Reservas",
+        "href": "#reservas"
+      }
+    ],
+    "cta": {
+      "label": "Reservar",
+      "href": "#reservas"
+    },
+    "openMenuLabel": "Abrir menú",
+    "closeMenuLabel": "Cerrar menú",
+    "skipToContent": "Saltar al contenido"
+  },
+  "business": {
+    "_note": "PLACEHOLDER: dato ilustrativo, sustituir por el real del cliente",
+    "legalName": "Pato Ramen S.L.",
+    "address": {
+      "streetAddress": "Carrer de Villarroel, 112",
+      "postalCode": "08011",
+      "addressLocality": "Barcelona",
+      "addressRegion": "Cataluña",
+      "addressCountry": "ES",
+      "display": "Carrer de Villarroel, 112 · 08011 Barcelona",
+      "_placeholder": true
+    },
+    "phone": "+34 931 00 00 00",
+    "phoneHref": "tel:+34931000000",
+    "email": "hola@patoramen.example",
+    "emailHref": "mailto:hola@patoramen.example",
+    "geo": {
+      "latitude": 41.3856,
+      "longitude": 2.1559,
+      "_placeholder": true
+    },
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+Villarroel+Barcelona",
+    "priceRange": "€€",
+    "averageTicket": "28 – 38 € por persona",
+    "servesCuisine": [
+      "Ramen",
+      "Cocina cantonesa",
+      "Dim sum",
+      "Pato asado",
+      "Cocina asiática"
+    ],
+    "acceptsReservations": true,
+    "openingHours": {
+      "display": [
+        {
+          "days": "Martes – Jueves",
+          "hours": "13:00 – 16:00 · 20:00 – 23:30"
+        },
+        {
+          "days": "Viernes – Sábado",
+          "hours": "13:00 – 16:30 · 20:00 – 00:30"
+        },
+        {
+          "days": "Domingo",
+          "hours": "13:00 – 17:00"
+        },
+        {
+          "days": "Lunes",
+          "hours": "Cerrado"
+        }
+      ],
+      "schema": [
+        "Tu,We,Th 13:00-16:00",
+        "Tu,We,Th 20:00-23:30",
+        "Fr,Sa 13:00-16:30",
+        "Fr,Sa 20:00-00:30",
+        "Su 13:00-17:00"
+      ]
+    },
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com/patoramen",
+        "handle": "@patoramen",
+        "_placeholder": true
+      },
+      {
+        "label": "TikTok",
+        "href": "https://tiktok.com/@patoramen",
+        "handle": "@patoramen",
+        "_placeholder": true
+      }
+    ]
+  },
+  "marquee": {
+    "words": [
+      "Ramen",
+      "拉面",
+      "Pato lacado",
+      "烧鸭",
+      "Dim sum",
+      "点心",
+      "Caldo de doce horas",
+      "缘味",
+      "Fuego bajo",
+      "Vapor",
+      "Tazón",
+      "Madera y laca"
+    ],
+    "separator": "✦",
+    "speedSeconds": 38
+  },
+  "decorativeVertical": [
+    {
+      "text": "缘味",
+      "lang": "zh-Hans",
+      "font": "Noto Serif SC",
+      "placement": "hero-right",
+      "sizeHint": "clamp(8rem,22vw,26rem)",
+      "opacity": 0.07,
+      "meaning": "Sabor del destino"
+    },
+    {
+      "text": "拉面",
+      "lang": "zh-Hans",
+      "font": "Noto Serif SC",
+      "placement": "platos-left",
+      "sizeHint": "clamp(6rem,16vw,18rem)",
+      "opacity": 0.06,
+      "meaning": "Ramen"
+    },
+    {
+      "text": "烧鸭",
+      "lang": "zh-Hans",
+      "font": "Noto Serif SC",
+      "placement": "platos-right",
+      "sizeHint": "clamp(6rem,16vw,18rem)",
+      "opacity": 0.06,
+      "meaning": "Pato asado"
+    },
+    {
+      "text": "点心",
+      "lang": "zh-Hans",
+      "font": "Noto Serif SC",
+      "placement": "historia-left",
+      "sizeHint": "clamp(6rem,16vw,18rem)",
+      "opacity": 0.06,
+      "meaning": "Dim sum, tocar el corazón"
+    },
+    {
+      "text": "ラーメン",
+      "lang": "ja",
+      "font": "Noto Serif JP",
+      "placement": "carta-right",
+      "sizeHint": "clamp(5rem,12vw,14rem)",
+      "opacity": 0.06,
+      "meaning": "Ramen"
+    },
+    {
+      "text": "火候",
+      "lang": "zh-Hans",
+      "font": "Noto Serif SC",
+      "placement": "opiniones-left",
+      "sizeHint": "clamp(6rem,14vw,16rem)",
+      "opacity": 0.06,
+      "meaning": "El punto justo del fuego"
+    },
+    {
+      "text": "一期一会",
+      "lang": "ja",
+      "font": "Noto Serif JP",
+      "placement": "reservas-right",
+      "sizeHint": "clamp(4rem,10vw,12rem)",
+      "opacity": 0.06,
+      "meaning": "Un encuentro, una oportunidad"
+    }
+  ],
+  "signature": {
+    "eyebrow": "Tres firmas · Una misma brasa",
+    "title": [
+      {
+        "text": "Tres gestos",
+        "emphasis": false
+      },
+      {
+        "text": "que no se apuran",
+        "emphasis": true
+      }
+    ],
+    "intro": "La cocina cabe en un tazón, una bandeja y una cesta de bambú. Lo demás es paciencia.",
+    "dishes": [
+      {
+        "id": "ramen",
+        "name": "Ramen de caldo largo",
+        "aside": "拉面 · ラーメン",
+        "asideLang": "zh-Hans",
+        "kicker": "Doce horas de hueso",
+        "description": "Hueso de cerdo y pollo a fuego mínimo hasta que el caldo se vuelve opaco y sedoso, fideos al dente, chashu deshecho en la cuchara y un huevo de yema que se rinde al primer palillo.",
+        "price": "14,50 €",
+        "priceNote": "Extra de huevo marinado 1,50 €",
+        "image": "https://images.unsplash.com/photo-1734313276354-75c96b3c0c36?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Fideos de ramen levantados con palillos sobre un cuenco con huevo marinado de yema anaranjada y caldo oscuro",
+        "tags": [
+          "Caldo de 12 h",
+          "Chashu",
+          "Huevo ajitama",
+          "Picante opcional"
+        ]
+      },
+      {
+        "id": "pato",
+        "name": "Pato asado lacado",
+        "aside": "烧鸭",
+        "asideLang": "zh-Hans",
+        "kicker": "Piel de papel de arroz",
+        "description": "Secado al aire durante dos días, lacado con maltosa y especias, asado hasta que la piel suena. Se trincha a la vista, con crepes finas, pepino y hoisin de la casa.",
+        "price": "24,00 €",
+        "priceNote": "Medio pato · Entero 44,00 €",
+        "image": "https://images.unsplash.com/photo-1765441012353-10fb4701a276?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Pato asado de piel brillante y cobriza, cortado en lonchas sobre bandeja blanca con hojas de menta",
+        "tags": [
+          "Lacado",
+          "Trinchado en sala",
+          "Para compartir"
+        ]
+      },
+      {
+        "id": "dimsum",
+        "name": "Dim sum al vapor",
+        "aside": "点心",
+        "asideLang": "zh-Hans",
+        "kicker": "Bambú, vapor y paciencia",
+        "description": "Masa translúcida plegada a mano cada mañana, rellenos de gamba, cerdo y cebollino, servidos en la cesta en que se cocinaron, con una nube de vapor que sube hasta tu cara.",
+        "price": "7,50 €",
+        "priceNote": "Cesta de 4 piezas",
+        "image": "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Cesta de bambú abierta con dumplings humeantes y un cuenco de salsa oscura con cilantro, con vapor a contraluz",
+        "tags": [
+          "Hecho a mano",
+          "Gamba y cebollino",
+          "Vapor de bambú"
+        ]
+      }
+    ],
+    "viewDishLabel": "Ver en la carta"
+  },
+  "story": {
+    "eyebrow": "Nuestra historia",
+    "kanji": "缘",
+    "title": [
+      {
+        "text": "Donde el",
+        "emphasis": false
+      },
+      {
+        "text": "vapor",
+        "emphasis": true
+      },
+      {
+        "text": "aprendió a esperar",
+        "emphasis": false
+      }
+    ],
+    "paragraphs": [
+      "Pato Ramen nace de una obsesión doméstica: que un caldo necesita más tiempo del que el mundo suele conceder. Cada madrugada, antes de que Villarroel despierte, los huesos ya llevan horas rindiéndose en la olla.",
+      "Caminamos entre dos tradiciones, el ramen de las barras japonesas y el pato lacado de los hornos cantoneses, y descubrimos que hablaban el mismo idioma: fuego bajo, grasa dorada, silencio atento. 缘味 es esa palabra: el sabor que llega por destino.",
+      "La sala es pequeña a propósito. Madera oscura, farolillos que apenas iluminan, una barra donde ves cómo se trincha el pato. Venir aquí es aceptar el ritmo: nada se apura, todo llega caliente."
+    ],
+    "pullQuote": {
+      "text": "Un buen caldo no se cocina, se acompaña.",
+      "attribution": "Cocina de Pato Ramen",
+      "_note": "Cita de marca, texto ilustrativo"
+    },
+    "stats": [
+      {
+        "value": "12",
+        "unit": "h",
+        "label": "de cocción lenta del caldo"
+      },
+      {
+        "value": "48",
+        "unit": "h",
+        "label": "de secado al aire del pato"
+      },
+      {
+        "value": "32",
+        "unit": "",
+        "label": "plazas, ni una más"
+      },
+      {
+        "value": "0",
+        "unit": "",
+        "label": "atajos en la cocina"
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1790102563096-64a25de9e9c0?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "imageAlt": "Barra de madera de un ramen-ya con cuencos apilados, frascos de condimentos y carteles manuscritos en la pared",
+    "overlays": [
+      {
+        "type": "caption",
+        "text": "La barra, 19:40 h",
+        "position": "bottom-left"
+      },
+      {
+        "type": "badge",
+        "text": "Desde 2019",
+        "position": "top-right",
+        "_note": "Año ilustrativo"
+      },
+      {
+        "type": "kanji",
+        "text": "缘味",
+        "position": "center-left",
+        "opacity": 0.12
+      }
+    ],
+    "secondaryImage": "https://images.unsplash.com/photo-1767818375229-be50b2b070ef?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "secondaryImageAlt": "Cocinero entre patos asados colgados, visto a través de un cristal empañado",
+    "secondaryImageCaption": "El maestro del horno, tras el cristal"
+  },
+  "menu": {
+    "eyebrow": "La carta",
+    "kanji": "菜单",
+    "title": [
+      {
+        "text": "Para leer",
+        "emphasis": false
+      },
+      {
+        "text": "con hambre",
+        "emphasis": true
+      }
+    ],
+    "intro": "Una carta corta, escrita a mano cada semana según mercado y humor del caldo. (Platos y precios ilustrativos.)",
+    "categories": [
+      {
+        "id": "ramen",
+        "name": "Ramen",
+        "aside": "拉面",
+        "items": [
+          {
+            "name": "Shoyu de pato",
+            "description": "Caldo claro de pato y soja, fideos finos, pechuga ahumada, menma y cebollino.",
+            "price": "15,00 €",
+            "note": "Favorito de la casa",
+            "tags": [
+              "Pato"
+            ]
+          },
+          {
+            "name": "Tonkotsu 12 h",
+            "description": "Cerdo y hueso al fuego bajo, chashu, huevo ajitama, ajo negro y nori.",
+            "price": "14,50 €",
+            "note": "",
+            "tags": [
+              "Cerdo"
+            ]
+          },
+          {
+            "name": "Miso picante",
+            "description": "Miso rojo, aceite de chile tostado, maíz y mantequilla de sésamo.",
+            "price": "14,00 €",
+            "note": "Picante",
+            "tags": [
+              "Picante"
+            ]
+          },
+          {
+            "name": "Ramen de setas",
+            "description": "Dashi de kombu y shiitake, tofu sedoso y aceite de trufa blanca.",
+            "price": "13,50 €",
+            "note": "Vegano",
+            "tags": [
+              "Vegano"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pato",
+        "name": "Pato asado",
+        "aside": "烧鸭",
+        "items": [
+          {
+            "name": "Pato lacado, medio",
+            "description": "Trinchado en sala con crepes, pepino, cebolleta y hoisin.",
+            "price": "24,00 €",
+            "note": "Encargar con 24 h en grupos",
+            "tags": [
+              "Compartir"
+            ]
+          },
+          {
+            "name": "Arroz con pato y encurtidos",
+            "description": "Arroz blanco, lonchas de pato lacado y encurtido crujiente de mostaza.",
+            "price": "13,00 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Bao de pato",
+            "description": "Pan al vapor, pato deshilachado, salsa de ciruela y pepino.",
+            "price": "6,50 €",
+            "note": "Unidad",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "dimsum",
+        "name": "Dim sum",
+        "aside": "点心",
+        "items": [
+          {
+            "name": "Xiao long bao",
+            "description": "Dumpling de sopa de cerdo y jengibre. Pincha, sorbe, después muerde.",
+            "price": "7,90 €",
+            "note": "4 piezas",
+            "tags": []
+          },
+          {
+            "name": "Shumai de gamba",
+            "description": "Gamba, cerdo y cebollino con corona de huevas de pez.",
+            "price": "7,50 €",
+            "note": "4 piezas",
+            "tags": []
+          },
+          {
+            "name": "Gyoza a la plancha",
+            "description": "Base tostada, relleno de col y cerdo, vinagre negro.",
+            "price": "6,90 €",
+            "note": "5 piezas",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "bebidas",
+        "name": "Bebidas",
+        "aside": "茶酒",
+        "items": [
+          {
+            "name": "Té de jazmín en tetera",
+            "description": "Hojas enteras, infusión lenta.",
+            "price": "3,50 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sake de la casa",
+            "description": "Frío o caliente, servido en tokkuri.",
+            "price": "5,50 €",
+            "note": "Copa",
+            "tags": []
+          },
+          {
+            "name": "Cerveza artesana asiática",
+            "description": "Lager seca de arroz, muy fría.",
+            "price": "4,50 €",
+            "note": "",
+            "tags": []
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Shoyu de pato",
+        "description": "El ramen que cruza las dos tradiciones.",
+        "image": "https://images.unsplash.com/photo-1504669887860-f6d4cc3feb4b?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Cuenco negro de fideos en caldo claro con carne estofada, huevo duro, cebollino y cilantro"
+      },
+      {
+        "title": "Pato con arroz",
+        "description": "Laca, sal y un golpe de encurtido.",
+        "image": "https://images.unsplash.com/photo-1759418661781-2b37f26c4573?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Plato de loza con lonchas de carne lacada oscura sobre arroz blanco y encurtido de mostaza"
+      },
+      {
+        "title": "Xiao long bao",
+        "description": "Sopa escondida en una piel finísima.",
+        "image": "https://images.unsplash.com/photo-1779333277496-a5106680169c?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Cesta de bambú con dumplings de sopa de punta anaranjada sobre mesa roja"
+      },
+      {
+        "title": "Shumai",
+        "description": "Gamba y cerdo bajo una corona dorada.",
+        "image": "https://images.unsplash.com/photo-1563245370-63ffc97abdbd?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Shumai dorados en una vaporera negra sobre cestas de bambú"
+      }
+    ],
+    "downloadMenuLabel": "Descargar carta completa (PDF)",
+    "downloadMenuHref": "#",
+    "downloadNote": "PLACEHOLDER: enlazar PDF real",
+    "allergensNote": "Informa a tu camarero de cualquier alergia o intolerancia. Precios con IVA incluido.",
+    "fullMenuCta": "Pedir la carta completa"
+  },
+  "socialProof": {
+    "eyebrow": "Lo que se dice en la barra",
+    "title": [
+      {
+        "text": "Voces con",
+        "emphasis": false
+      },
+      {
+        "text": "hambre",
+        "emphasis": true
+      }
+    ],
+    "_note": "Citas y medios ILUSTRATIVOS (placeholders). Sustituir por reseñas y prensa reales antes de publicar.",
+    "press": [
+      {
+        "quote": "Un caldo que sabe a tiempo bien empleado. El mejor ramen del Eixample.",
+        "outlet": "Gaceta Gastronómica",
+        "author": "Redacción",
+        "_placeholder": true
+      },
+      {
+        "quote": "El pato lacado más honesto de la ciudad: piel que suena, carne que se deshace.",
+        "outlet": "Revista Mesa y Brasa",
+        "author": "Sección Mesas",
+        "_placeholder": true
+      },
+      {
+        "quote": "Pequeño, oscuro y absolutamente adictivo. Llega con hambre y sin prisa.",
+        "outlet": "Guía Barcelona Noctámbula",
+        "author": "Redacción",
+        "_placeholder": true
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Marta S.",
+        "rating": 5,
+        "date": "Septiembre 2026",
+        "text": "Entré por el ramen y salí pensando en el pato. La barra, la luz y el vapor son una sola cosa.",
+        "source": "Reseña de cliente",
+        "_placeholder": true
+      },
+      {
+        "author": "Jordi P.",
+        "rating": 5,
+        "date": "Agosto 2026",
+        "text": "El xiao long bao llega humeante y el caldo del shoyu de pato merece un aplauso. Reservad.",
+        "source": "Reseña de cliente",
+        "_placeholder": true
+      },
+      {
+        "author": "Lucía y Ahmed",
+        "rating": 5,
+        "date": "Julio 2026",
+        "text": "Cenamos pato entero entre cuatro. Trincharlo delante de ti es puro teatro. Volveremos.",
+        "source": "Reseña de cliente",
+        "_placeholder": true
+      },
+      {
+        "author": "Chen W.",
+        "rating": 4,
+        "date": "Junio 2026",
+        "text": "Auténtico, sin concesiones. Faltan mesas, sobra sabor.",
+        "source": "Reseña de cliente",
+        "_placeholder": true
+      }
+    ],
+    "rating": {
+      "value": 4.8,
+      "max": 5,
+      "count": 412,
+      "label": "valoración media",
+      "source": "Media de reseñas (ilustrativa)",
+      "_placeholder": true
+    }
+  },
+  "gallery": {
+    "eyebrow": "Fuego, vapor y madera",
+    "title": [
+      {
+        "text": "Fotogramas",
+        "emphasis": false
+      },
+      {
+        "text": "de una noche",
+        "emphasis": true
+      }
+    ],
+    "caption": "Una noche cualquiera en Villarroel.",
+    "items": [
+      {
+        "image": "https://images.unsplash.com/photo-1765441012353-10fb4701a276?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Pato lacado de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta",
+        "caption": "Piel, laca, fuego",
+        "span": "wide"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1773559250354-0d7281984a89?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Patos y carnes lacadas colgando tras un cristal empañado, iluminados por focos cálidos",
+        "caption": "Colgados a la espera",
+        "span": "tall"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1601351841251-766245326eee?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Barra de izakaya con farolillos de papel rojos y cocineros trabajando bajo luz ámbar",
+        "caption": "La barra, a plena marcha",
+        "span": "wide"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Vapor ascendiendo de una cesta de bambú con dumplings junto a un cuenco de salsa",
+        "caption": "Vapor a contraluz",
+        "span": "tall"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1617870314635-fc819547ec11?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Callejón nocturno con farolillos rojos y rótulos iluminados",
+        "caption": "Después de la última ronda",
+        "span": "square"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1563245370-63ffc97abdbd?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Shumai dorados en una vaporera negra",
+        "caption": "Shumai de gamba",
+        "span": "square"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1734313276354-75c96b3c0c36?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Fideos de ramen levantados con palillos sobre un cuenco con huevo marinado",
+        "caption": "El gesto del ramen",
+        "span": "tall"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1707202282188-f8d03b2791b5?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Barra nocturna con farolillos japoneses encendidos y botellas al fondo",
+        "caption": "Luz de farolillo",
+        "span": "wide"
+      }
+    ]
+  },
+  "reservation": {
+    "id": "reservas",
+    "eyebrow": "Reservas",
+    "kanji": "缘",
+    "title": [
+      {
+        "text": "Guarda tu",
+        "emphasis": false
+      },
+      {
+        "text": "sitio",
+        "emphasis": true
+      },
+      {
+        "text": "en la barra",
+        "emphasis": false
+      }
+    ],
+    "copy": "Treinta y dos plazas y un caldo que no espera. Reserva tu mesa y te guardaremos el mejor rincón de madera y vapor. Para grupos de más de 8 personas, escríbenos.",
+    "image": "https://images.unsplash.com/photo-1601351841251-766245326eee?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "imageAlt": "Barra de izakaya con farolillos de papel rojos iluminando la zona de reservas",
+    "note": "Confirmaremos tu reserva por correo en menos de 24 horas.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Tu nombre",
+          "autocomplete": "name"
+        },
+        "email": {
+          "label": "Correo electrónico",
+          "placeholder": "tu@correo.com",
+          "autocomplete": "email"
+        },
+        "phone": {
+          "label": "Teléfono",
+          "placeholder": "+34 600 000 000",
+          "autocomplete": "tel"
+        },
+        "date": {
+          "label": "Fecha",
+          "placeholder": "dd/mm/aaaa"
+        },
+        "time": {
+          "label": "Hora",
+          "placeholder": "Elige una hora"
+        },
+        "partySize": {
+          "label": "Comensales",
+          "placeholder": "¿Cuántos sois?"
+        },
+        "notes": {
+          "label": "Alergias o peticiones",
+          "placeholder": "Alergias, cumpleaños, el pato entero por encargo..."
+        },
+        "privacy": {
+          "label": "Acepto la política de privacidad y el tratamiento de mis datos para gestionar la reserva."
+        }
+      },
+      "partySizeOptions": [
+        {
+          "value": "1",
+          "label": "1 persona"
+        },
+        {
+          "value": "2",
+          "label": "2 personas"
+        },
+        {
+          "value": "3",
+          "label": "3 personas"
+        },
+        {
+          "value": "4",
+          "label": "4 personas"
+        },
+        {
+          "value": "5",
+          "label": "5 personas"
+        },
+        {
+          "value": "6",
+          "label": "6 personas"
+        },
+        {
+          "value": "7",
+          "label": "7 personas"
+        },
+        {
+          "value": "8",
+          "label": "8 personas"
+        }
+      ],
+      "timeSlots": [
+        {
+          "group": "Comida",
+          "slots": [
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30"
+          ]
+        },
+        {
+          "group": "Cena",
+          "slots": [
+            "20:00",
+            "20:30",
+            "21:00",
+            "21:30",
+            "22:00",
+            "22:30",
+            "23:00"
+          ]
+        }
+      ],
+      "validation": {
+        "nameRequired": "Dinos tu nombre para guardarte la mesa.",
+        "nameMin": "El nombre debe tener al menos 2 caracteres.",
+        "emailRequired": "Necesitamos tu correo para confirmar la reserva.",
+        "emailInvalid": "Introduce un correo electrónico válido.",
+        "phoneInvalid": "Introduce un teléfono válido (9 a 15 dígitos).",
+        "dateRequired": "Elige el día en que quieres venir.",
+        "datePast": "La fecha no puede ser anterior a hoy.",
+        "dateClosed": "Los lunes descansamos. Elige otro día.",
+        "timeRequired": "Elige una hora.",
+        "partySizeRequired": "Indica cuántos comensales sois.",
+        "partySizeMax": "Para más de 8 personas, escríbenos por correo.",
+        "notesMax": "El mensaje no puede superar los 500 caracteres.",
+        "privacyRequired": "Debes aceptar la política de privacidad."
+      },
+      "submitLabel": "Solicitar reserva",
+      "submittingLabel": "Enviando...",
+      "success": {
+        "title": "Mesa solicitada",
+        "message": "Gracias, {name}. Hemos recibido tu solicitud y te escribiremos a {email} en menos de 24 horas para confirmarla."
+      },
+      "error": {
+        "title": "Algo se ha enfriado",
+        "message": "No hemos podido enviar tu reserva. Inténtalo de nuevo o llámanos al +34 931 00 00 00."
+      },
+      "rateLimited": "Demasiados intentos. Espera unos minutos e inténtalo de nuevo."
+    },
+    "endpoint": "/api/reservar",
+    "email": {
+      "to": "reservas@patoramen.example",
+      "from": "Pato Ramen <reservas@patoramen.example>",
+      "subjectTemplate": "Nueva reserva: {name} · {partySize} pax · {date} {time}",
+      "_placeholder": true
+    }
+  },
+  "footer": {
+    "tagline": "Caldo lento. Pato lacado. Fuego con memoria.",
+    "kanji": "缘味",
+    "columns": [
+      {
+        "title": "Visítanos",
+        "lines": [
+          "Carrer de Villarroel, 112",
+          "08011 Barcelona"
+        ]
+      },
+      {
+        "title": "Horarios",
+        "lines": [
+          "Mar – Jue · 13:00 – 16:00 · 20:00 – 23:30",
+          "Vie – Sáb · 13:00 – 16:30 · 20:00 – 00:30",
+          "Dom · 13:00 – 17:00",
+          "Lunes cerrado"
+        ]
+      },
+      {
+        "title": "Contacto",
+        "lines": [
+          "+34 931 00 00 00",
+          "hola@patoramen.example"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "Aviso legal",
+        "href": "#"
+      },
+      {
+        "label": "Política de privacidad",
+        "href": "#"
+      },
+      {
+        "label": "Cookies",
+        "href": "#"
+      }
+    ],
+    "copyright": "© 2026 Pato Ramen · 缘味. Todos los derechos reservados.",
+    "credit": "Hecho con paciencia, como el caldo.",
+    "cta": {
+      "title": "¿Mesa para esta noche?",
+      "label": "Reservar ahora",
+      "href": "#reservas"
+    },
+    "placeholderNote": "PLACEHOLDER: dato ilustrativo, sustituir por el real del cliente"
+  },
+  "motion": {
+    "principles": "Lento, líquido y cálido: como vapor subiendo. Sin scroll-hijacking; todo se activa con ScrollTrigger sobre el scroll nativo. Respetar prefers-reduced-motion.",
+    "ease": {
+      "enter": "power3.out",
+      "editorial": "expo.out",
+      "smooth": "power2.inOut"
+    },
+    "duration": {
+      "fast": 0.4,
+      "base": 0.9,
+      "slow": 1.6
+    },
+    "stagger": 0.08,
+    "hero": {
+      "imageKenBurns": {
+        "from": 1.08,
+        "to": 1,
+        "duration": 2.4
+      },
+      "titleReveal": "line-mask slide-up, stagger 0.12s, palabras en cursiva con fade dorado",
+      "steamOverlay": "particulas/shader de vapor sutil (lazy, client:visible, solo >=768px)",
+      "parallax": {
+        "image": 0.25,
+        "kanji": 0.5
+      }
+    },
+    "scroll": {
+      "imageReveal": "clip-path inset(100% 0 0 0) a inset(0) con scale 1.15 a 1",
+      "parallaxLayers": [
+        0.1,
+        0.25,
+        0.5
+      ],
+      "pinned": [
+        "signature (platos en horizontal)",
+        "story (stats)"
+      ],
+      "counters": "contadores numéricos de stats al entrar en viewport"
+    },
+    "hover": {
+      "dishImage": "distorsión líquida (shader) en hover, fallback a scale 1.04",
+      "button": "borde luminoso dorado + relleno de laca",
+      "galleryItem": "zoom lento 1.06 + caption fade"
+    },
+    "marquee": {
+      "direction": "left",
+      "pauseOnHover": true
+    },
+    "kanjiDecor": "escritura vertical (writing-mode: vertical-rl), opacidad 0.06 a 0.12, parallax lento",
+    "mobileFallbacks": {
+      "below": 768,
+      "disableWebGL": true,
+      "staticHeroImage": true,
+      "disableParallax": true
+    },
+    "reducedMotion": "sustituir animaciones por fades de 0.2s"
+  }
+}

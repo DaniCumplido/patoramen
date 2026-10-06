@@ -1,0 +1,25 @@
+---
+import brand from '../data/brand.json';
+
+interface Props {
+  placement: string;
+  class?: string;
+  parallax?: number;
+}
+const { placement, class: className = '', parallax = 0.25 } = Astro.props;
+const item = brand.decorativeVertical.find((d) => d.placement === placement);
+---
+
+{
+  item && (
+    <span
+      aria-hidden="true"
+      lang={item.lang}
+      class:list={['kanji-v absolute z-0', className]}
+      style={`font-size:${item.sizeHint};opacity:${item.opacity};${item.font === 'Noto Serif JP' ? "font-family:'Noto Serif JP','Noto Serif SC',serif;" : ''}`}
+      data-parallax={parallax}
+    >
+      {item.text}
+    </span>
+  )
+}

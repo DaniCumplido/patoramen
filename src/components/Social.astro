@@ -1,0 +1,46 @@
+---
+import brand from '../data/brand.json';
+import Title from './Title.astro';
+import Kanji from './Kanji.astro';
+import Reviews from './react/Reviews';
+import { Marquee } from './ui/marquee';
+import { AnimatedShinyText } from './ui/animated-shiny-text';
+
+const { socialProof, motion } = brand;
+const style = { '--duration': '70s', '--gap': '1.5rem' } as Record<string, string>;
+---
+
+<section id="opiniones" class="section-pad relative overflow-x-clip bg-background">
+  <Kanji placement="opiniones-left" class="-bottom-4 left-1 md:left-6" parallax={0.35} />
+
+  <div class="container-x relative z-10">
+    <header>
+      <p class="eyebrow mb-6" data-fade>
+        <AnimatedShinyText>{socialProof.eyebrow}</AnimatedShinyText>
+      </p>
+      <Title segments={socialProof.title} />
+    </header>
+  </div>
+
+  <!-- Press marquee (placeholder quotes, marked with a dagger) -->
+  <div class="relative z-10 mt-16 -mx-5 border-y border-line/80 bg-deep py-8 sm:-mx-8 lg:-mx-14">
+    <Marquee repeat={3} pauseOnHover={motion.marquee.pauseOnHover} reverse className="!p-0" style={style}>
+      {
+        socialProof.press.map((p) => (
+          <figure class="flex w-[22rem] shrink-0 flex-col justify-between gap-5 rounded-sm border border-line bg-surface p-7 md:w-[30rem]" data-placeholder={p._placeholder ? 'true' : undefined}>
+            <blockquote class="font-serif text-2xl font-light italic leading-snug text-ink md:text-3xl">&ldquo;{p.quote}&rdquo;</blockquote>
+            <figcaption class="text-xs uppercase tracking-[0.2em] text-secondary">
+              {p.outlet} · <span class="text-muted">{p.author}</span>
+              {p._placeholder && <span aria-hidden="true"> †</span>}
+            </figcaption>
+          </figure>
+        ))
+      }
+    </Marquee>
+  </div>
+
+  <div class="container-x relative z-10 mt-16 md:mt-24">
+    <Reviews client:visible />
+    <p class="mt-10 text-xs leading-relaxed text-muted"><span aria-hidden="true">† </span>{socialProof._note}</p>
+  </div>
+</section>

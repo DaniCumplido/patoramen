@@ -1,0 +1,53 @@
+---
+import brand from '../data/brand.json';
+import Title from './Title.astro';
+
+const { gallery } = brand;
+const ratio: Record<string, string> = {
+  wide: 'aspect-[4/3]',
+  tall: 'aspect-[3/4.2]',
+  square: 'aspect-square',
+};
+---
+
+<section id="galeria" class="section-pad relative overflow-x-clip bg-deep">
+  <div class="container-x relative z-10">
+    <header class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+      <div>
+        <p class="eyebrow mb-6" data-fade>{gallery.eyebrow}</p>
+        <Title segments={gallery.title} />
+      </div>
+      <p class="max-w-xs text-sm uppercase tracking-[0.2em] text-muted" data-fade>{gallery.caption}</p>
+    </header>
+
+    <ul class="mt-14 columns-1 gap-4 sm:columns-2 lg:columns-3 md:mt-20">
+      {
+        gallery.items.map((g) => (
+          <li class="mb-4 break-inside-avoid">
+            <figure
+              data-clip
+              class:list={['group relative overflow-hidden rounded-[2px] border border-line/70', ratio[g.span] ?? ratio.square]}
+            >
+              <div data-clip-inner class="absolute inset-0">
+                <img
+                  src={g.image}
+                  alt={g.alt}
+                  width="2400"
+                  height={g.span === 'tall' ? 3360 : g.span === 'wide' ? 1800 : 2400}
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.06]"
+                />
+              </div>
+              <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-background/85 via-transparent to-transparent opacity-100 transition-opacity duration-700 md:opacity-0 md:group-hover:opacity-100"></div>
+              <figcaption class="absolute inset-x-0 bottom-0 p-5 transition-all duration-700 md:translate-y-3 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+                <span class="font-serif text-2xl italic text-ink">{g.caption}</span>
+              </figcaption>
+              <span aria-hidden="true" class="pointer-events-none absolute inset-3 border border-primary/0 transition-colors duration-700 group-hover:border-primary/60"></span>
+            </figure>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

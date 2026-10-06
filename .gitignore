@@ -1,0 +1,46 @@
+# Dependencies (root and any nested package)
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+.yarn/
+.pnpm-store/
+
+# Build output
+dist/
+.astro/
+.vercel/
+.netlify/
+.output/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caches & tooling
+.cache/
+.turbo/
+.eslintcache
+*.tsbuildinfo
+.parcel-cache/
+
+# Playwright / QA artefacts
+qa-screenshots/
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db

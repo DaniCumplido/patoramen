@@ -1,0 +1,134 @@
+---
+import { MapPin } from 'lucide-react';
+import brand from '../data/brand.json';
+import SteamCanvas from './react/SteamCanvas';
+import HeroCtas from './react/HeroCtas';
+
+const { hero, assets, business, footer, decorativeVertical } = brand;
+const kanji = decorativeVertical.find((d) => d.placement === 'hero-right');
+
+// group title segments into lines (segment.break closes a line)
+const lines: { text: string; emphasis: boolean }[][] = [];
+let cur: { text: string; emphasis: boolean }[] = [];
+for (const s of hero.title) {
+  cur.push(s);
+  if (s.break) {
+    lines.push(cur);
+    cur = [];
+  }
+}
+if (cur.length) lines.push(cur);
+const hoursTitle = footer.columns[1].title;
+---
+
+<section id="inicio" data-hero class="grain relative isolate flex min-h-screen flex-col overflow-hidden bg-deep">
+  <!-- Image layer -->
+  <div data-hero-kb class="absolute inset-0 -z-20">
+    <img
+      data-hero-img
+      src={assets.heroImage}
+      alt={hero.imageAlt}
+      width="2400"
+      height="1600"
+      class="absolute inset-0 h-full w-full object-cover object-[60%_50%]"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
+  </div>
+
+  <!-- Cinematic gradients, vignette -->
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-gradient-to-r from-background/90 via-background/45 to-transparent md:via-background/25"></div>
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_65%_45%,transparent_35%,rgba(14,11,9,0.75)_100%)]"></div>
+
+  <!-- WebGL steam (desktop only, lazy, paused off-screen). Static fallback = gradients above -->
+  <SteamCanvas
+    client:only="react"
+    className="pointer-events-none absolute bottom-[8%] right-[2%] -z-[5] hidden h-[85%] w-[62%] mix-blend-screen md:block"
+  />
+
+  <!-- Vertical kanji -->
+  {
+    kanji && (
+      <span
+        data-hero-kanji
+        aria-hidden="true"
+        lang={kanji.lang}
+        class="kanji-v absolute right-[3vw] top-[12%] z-0 hidden sm:block"
+        style={`font-size:${kanji.sizeHint};opacity:${kanji.opacity * 1.6}`}
+      >
+        {hero.kanjiVertical}
+      </span>
+    )
+  }
+
+  <!-- Side vertical tagline -->
+  <p
+    aria-hidden="true"
+    class="absolute bottom-1/3 left-3 z-10 hidden text-[0.65rem] font-medium uppercase tracking-[0.4em] text-ink/80 [writing-mode:vertical-rl] [transform:rotate(180deg)] lg:block xl:left-6"
+  >
+    {brand.tagline}
+  </p>
+
+  <div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col justify-between px-5 pb-12 pt-28 sm:px-8 md:pb-16 md:pt-36 lg:px-20">
+    <!-- Location badge -->
+    <div data-hero-fade>
+      <span class="inline-flex items-center gap-2.5 rounded-full border border-ink/20 bg-background/50 px-4 py-2 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink backdrop-blur-md">
+        <MapPin className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
+        {hero.badge}
+      </span>
+    </div>
+
+    <div class="mt-16 grid items-end gap-12 lg:grid-cols-12">
+      <div class="lg:col-span-9">
+        <h1 class="text-hero text-ink" aria-label={hero.titlePlain}>
+          {
+            lines.map((line) => (
+              <span class="line-mask" aria-hidden="true">
+                <span class="block" data-hero-line>
+                  {line.map((s, i) => (
+                    <>
+                      <span class={s.emphasis ? 'gold-text pr-[0.08em]' : 'font-light'}>{s.text}</span>
+                      {i < line.length - 1 ? ' ' : ''}
+                    </>
+                  ))}
+                </span>
+              </span>
+            ))
+          }
+        </h1>
+        <p data-hero-fade class="mt-8 max-w-xl text-base leading-relaxed text-ink/90 md:text-lg">{hero.subtitle}</p>
+        <div data-hero-fade class="mt-10">
+          <HeroCtas client:visible />
+        </div>
+      </div>
+
+      <!-- Glass card layered over the photo -->
+      <aside data-hero-fade class="hidden lg:col-span-3 lg:block">
+        <div class="relative rounded-sm border border-ink/15 bg-background/60 p-6 backdrop-blur-md">
+          <span aria-hidden="true" class="absolute -top-px left-6 h-px w-16 bg-primary"></span>
+          <p class="eyebrow !text-primary before:!bg-primary/60">{hoursTitle}</p>
+          <dl class="mt-5 space-y-3 text-sm">
+            {
+              business.openingHours.display.map((h) => (
+                <div class="flex flex-col gap-0.5 border-b border-line/70 pb-3 last:border-0 last:pb-0">
+                  <dt class="text-xs uppercase tracking-[0.18em] text-muted">{h.days}</dt>
+                  <dd class="text-ink">{h.hours}</dd>
+                </div>
+              ))
+            }
+          </dl>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Scroll hint -->
+    <div data-hero-fade class="mt-12 flex items-center gap-4 text-[0.7rem] uppercase tracking-[0.3em] text-ink/85">
+      <span class="relative block h-12 w-px overflow-hidden bg-ink/25" aria-hidden="true">
+        <span class="absolute inset-0 animate-scroll-line bg-primary motion-reduce:animate-none"></span>
+      </span>
+      <span>{hero.scrollHint} <span aria-hidden="true">↓</span></span>
+    </div>
+  </div>
+</section>

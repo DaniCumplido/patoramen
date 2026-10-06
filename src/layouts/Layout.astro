@@ -1,0 +1,113 @@
+---
+import brand from '../data/brand.json';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { seo, business, colors, fonts, nav, socialProof } = brand;
+const title = Astro.props.title ?? seo.title;
+const description = Astro.props.description ?? seo.description;
+const siteUrl = seo.siteUrl.replace(/\/$/, '');
+const canonical = new URL(Astro.url.pathname, siteUrl + '/').toString();
+
+const cssVars = `:root{--c-background:${colors.background};--c-surface:${colors.surface};--c-text:${colors.text};--c-primary:${colors.primary};--c-secondary:${colors.secondary};--c-accent:${colors.accent};--c-muted:${colors.extra.textMuted};--c-line:${colors.extra.border};--c-lacquer:${colors.extra.lacquerRed};--c-on-lacquer:${colors.extra.onLacquerRed};--c-on-primary:${colors.extra.onPrimary};--c-deep:${colors.extra.backgroundDeep};--c-wood:${colors.extra.woodWarm}}`;
+
+// JSON-LD Restaurant. aggregateRating is omitted on purpose: brand.socialProof.rating is flagged
+// `_placeholder`, so illustrative review data must not be published as structured data.
+const jsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': seo.schemaType,
+  name: brand.brandName,
+  legalName: business.legalName,
+  description,
+  url: siteUrl,
+  image: [seo.ogImage, ...brand.assets.gallery.slice(0, 2)],
+  telephone: business.phone,
+  email: business.email,
+  priceRange: business.priceRange,
+  servesCuisine: business.servesCuisine,
+  acceptsReservations: business.acceptsReservations,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: business.address.streetAddress,
+    postalCode: business.address.postalCode,
+    addressLocality: business.address.addressLocality,
+    addressRegion: business.address.addressRegion,
+    addressCountry: business.address.addressCountry,
+  },
+  geo: { '@type': 'GeoCoordinates', latitude: business.geo.latitude, longitude: business.geo.longitude },
+  openingHours: business.openingHours.schema,
+  hasMap: business.mapUrl,
+  sameAs: business.social.map((s) => s.href),
+};
+if (!socialProof.rating._placeholder) {
+  jsonLd.aggregateRating = {
+    '@type': 'AggregateRating',
+    ratingValue: socialProof.rating.value,
+    bestRating: socialProof.rating.max,
+    reviewCount: socialProof.rating.count,
+  };
+}
+---
+
+<!doctype html>
+<html lang={seo.lang} class="bg-background">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={seo.keywords.join(', ')} />
+    <meta name="theme-color" content={seo.themeColor} />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content="restaurant.restaurant" />
+    <meta property="og:site_name" content={brand.brandName} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={seo.locale} />
+    <meta property="og:image" content={seo.ogImage} />
+    <meta property="og:image:alt" content={seo.ogImageAlt} />
+    <meta name="twitter:card" content={seo.twitterCard} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={seo.ogImage} />
+    <meta name="twitter:image:alt" content={seo.ogImageAlt} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="preload" as="image" href={brand.assets.heroImage} fetchpriority="high" />
+    <link rel="stylesheet" href={fonts.googleFontsUrl} />
+
+    <style is:inline set:html={cssVars} />
+    <style is:inline>
+      /* initial hidden state only when JS + motion are available (no flash, no hidden content otherwise) */
+      .js-anim [data-hero-line] { opacity: 0; }
+      .js-anim [data-hero-fade] { opacity: 0; }
+    </style>
+    <script is:inline>
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-anim');
+    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a
+      href="#contenido"
+      class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-on-primary transition-transform focus:translate-y-0"
+    >
+      {nav.skipToContent}
+    </a>
+    <slot />
+    <script>
+      import '../scripts/animations';
+    </script>
+  </body>
+</html>

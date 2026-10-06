@@ -1,0 +1,44 @@
+{
+  "buildSuccess": true,
+  "date": "2026-10-06",
+  "checks": {
+    "npmInstall": "ok",
+    "npmRunBuild": "ok (hybrid + node adapter; sitemap-index.xml + sitemap-0.xml in dist/client)",
+    "astroCheck": "0 errors, 0 warnings, 0 hints (41 files)",
+    "dataFiles": "brand.json is the only data source; no .ts data files (src/lib holds only schema/utils/hook code)",
+    "seo": "title, description, canonical, og:*, twitter:* present; exactly 1 h1 at 1440/768/375; h2/h3 hierarchy logical; JSON-LD Restaurant + PostalAddress + GeoCoordinates; robots.txt + sitemap-index.xml generated",
+    "images": "all <img> have alt, width/height; only hero is eager (fetchpriority high), the rest lazy; no 4xx/failed requests; no missing /public refs (only favicon.svg used)",
+    "responsive": "no horizontal overflow at 1440/768/375 (scrollWidth == clientWidth); steam canvas present >=768, absent at 375; no text/canvas collisions seen",
+    "reveals": "after scroll-through no content stuck at opacity 0/clip-path (only hover-reveal gallery captions on desktop; visible on touch)",
+    "forms": "empty submit shows 6 inline role=alert errors; invalid email/phone errors; valid submit hits /api/reservar -> 503 not_configured (no RESEND_API_KEY) and shows the friendly error banner",
+    "reducedMotion": "content visible, no canvas, no js-anim hidden states",
+    "scrollHijack": "none: no wheel/touch listeners, no smooth-scroll libs, wheel scroll native (0 preventDefault on wheel/touch); only preventDefault is keyboard nav in MenuTabs"
+  },
+  "findings": [
+    "[fixed] Unused dependency @react-three/drei",
+    "[fixed] React hydration errors #418/#423 under prefers-reduced-motion (framer-motion useReducedMotion differs between SSR and first client render)",
+    "[fixed] Nav links over bright hero image: worst-case contrast 2.35:1 (Opiniones), 3.4:1 (Carta); text-ink/85 with no scrim",
+    "[fixed] 'Desde 2019' badge over photo had only 70% bg opacity (local contrast risk)"
+  ],
+  "fixes": [
+    "package.json: removed @react-three/drei; added playwright as devDependency",
+    "src/lib/use-reduced-motion.ts: SSR-safe hook; used in MenuHighlights, blur-fade, border-beam, shiny-text",
+    "src/components/Nav.astro: top gradient scrim (deep/90 -> transparent) while unscrolled, links text-ink (full opacity), scrolled bar bg-background/85",
+    "src/components/Story.astro: badge bg-background/85",
+    ".gitignore: qa-screenshots/"
+  ],
+  "contrast": {
+    "method": "Playwright: every visible text node (796 samples across desktop/mobile, base + form-error states) measured against real rendered backgrounds (text hidden, pixel-sampled, mean and 5th/95th percentile worst case) incl. placeholders, eyebrows, footnotes, errors, nav over hero",
+    "result": "all pass >=4.5:1 (large >=3:1) after fixes. Remaining flags are measurement artefacts: off-screen skip link, border pixels of pills/tabs, fixed nav in full-page capture. Decorative aria-hidden kanji excluded by design"
+  },
+  "remainingCaveats": [
+    "seo.siteUrl is placeholder https://www.example.com: canonical, sitemap, robots Sitemap line and og:url must be updated in brand.json (and public/robots.txt) before launch",
+    "RESEND_API_KEY not set: reservation submit returns 503 error banner until configured (success state not exercised end to end)",
+    "Images are remote Unsplash URLs (no local /public images); consider self-hosting for production",
+    "react-three-fiber chunk is ~817 kB (220 kB gzip); deferred island, absent on mobile, but heavy on tablet/desktop",
+    "aggregateRating omitted from JSON-LD on purpose (placeholder reviews)",
+    "WebGL 'GPU stall' warnings appear only in headless software GL"
+  ],
+  "screenshotsDir": "qa-screenshots/ (hero, full page and per-section PNGs at desktop/tablet/mobile, form states; gitignored)",
+  "scripts": ["qa-audit.mjs", "qa-contrast.mjs", "qa-interact.mjs"]
+}

@@ -1,0 +1,25 @@
+---
+interface Segment {
+  text: string;
+  emphasis?: boolean;
+}
+interface Props {
+  segments: Segment[];
+  tag?: 'h1' | 'h2' | 'h3';
+  class?: string;
+  lines?: boolean;
+}
+const { segments, tag = 'h2', class: className = '', lines = true } = Astro.props;
+const Tag = tag;
+---
+
+<Tag class:list={['text-h2 text-ink', className]} data-lines={lines ? '' : undefined}>
+  {
+    segments.map((s, i) => (
+      <>
+        <span class={s.emphasis ? 'gold-text pr-[0.06em]' : ''}>{s.text}</span>
+        {i < segments.length - 1 ? ' ' : ''}
+      </>
+    ))
+  }
+</Tag>
