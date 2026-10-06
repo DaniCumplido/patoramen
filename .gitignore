@@ -7,7 +7,6 @@ node_modules/
 .pnpm-store/
 
 # Build output
-dist/
 .astro/
 .vercel/
 .netlify/

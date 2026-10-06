@@ -81,8 +81,8 @@ function FormInner() {
       const data = (await res.json().catch(() => ({}))) as { message?: string };
       setServerMessage(res.status === 429 ? form.rateLimited : data.message ?? form.error.message);
       setStatus('error');
-    } catch {
-      setServerMessage(form.error.message);
+    } catch (err) {
+      setServerMessage('Las reservas en línea no están disponibles en este momento. Por favor, llama al restaurante directamente.');
       setStatus('error');
     }
   };
