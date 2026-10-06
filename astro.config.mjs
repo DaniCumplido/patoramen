@@ -8,6 +8,7 @@ const brand = JSON.parse(readFileSync(new URL('./src/data/brand.json', import.me
 
 export default defineConfig({
   site: brand.seo.siteUrl,
+  base: '/patoramen/',
   output: 'static',
   integrations: [react(), tailwind({ applyBaseStyles: false }), sitemap()],
   devToolbar: { enabled: false },
