@@ -1,8 +1,8 @@
 {
   "brandName": "Pato Ramen · 缘味",
-  "tagline": "Caldo lento. Pato lacado. Fuego con memoria.",
+  "tagline": "Caldo lento. Pato tierno. Fuego con memoria.",
   "industry": "Restaurante · Ramen y pato asado (schema.org/Restaurant)",
-  "valueProposition": "Ramen de caldo de doce horas, pato lacado y dim sum al vapor en una sala de madera y penumbra dorada, en el corazón del Eixample.",
+  "valueProposition": "Ramen de caldo de doce horas, pato tierno y dim sum al vapor en una sala de madera y penumbra dorada, en el corazón del Eixample.",
   "artDirection": {
     "visualMood": "Claroscuro cinemático de taberna asiática: carbón cálido, vapor a contraluz, brillo de caldo dorado y destellos de laca roja. Mucho aire negativo, como una revista gastronómica impresa en papel oscuro.",
     "imageryStyle": "Full-bleed macro con grano analógico, profundidad de campo corta, contraste dramático y viñeteado cálido. Las imágenes ocupan el marco; la interfaz susurra a su alrededor.",
@@ -67,7 +67,7 @@
       "https://images.unsplash.com/photo-1707202282188-f8d03b2791b5?auto=format&fit=crop&w=2400&q=80&fm=webp"
     ],
     "galleryAlt": [
-      "Pato lacado de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta, en penumbra cálida",
+      "Pato tierno de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta, en penumbra cálida",
       "Patos y carnes lacadas colgando tras un cristal empañado, iluminados por focos cálidos en la noche",
       "Barra de izakaya con farolillos de papel rojos y cocineros trabajando bajo una luz ámbar",
       "Vapor ascendiendo de una cesta de bambú con dumplings, junto a un cuenco de salsa oscura con cilantro, a contraluz",
@@ -88,7 +88,7 @@
     }
   },
   "hero": {
-    "badge": "Carrer de Villarroel · Barcelona",
+    "badge": "Carrer de Villarroel 255 · Barcelona",
     "title": [
       {
         "text": "Caldo lento,",
@@ -96,7 +96,7 @@
         "break": true
       },
       {
-        "text": "pato crujiente",
+        "text": "pato tierno",
         "emphasis": true,
         "break": true
       },
@@ -111,10 +111,10 @@
         "break": false
       }
     ],
-    "titlePlain": "Caldo lento, pato crujiente y tiempo en el tazón.",
-    "subtitle": "Doce horas de hueso y fuego bajo, un pato lacado hasta que cruje como papel de arroz y una barra donde el vapor se queda a cenar contigo.",
-    "primaryCta": "Reservar mesa",
-    "primaryCtaHref": "#reservas",
+    "titlePlain": "Caldo lento, pato tierno y tiempo en el tazón.",
+    "subtitle": "Doce horas de hueso y fuego bajo, un pato tierno en su punto justo de jugosidad y un espacio donde el vapor invita a tomarse la vida con calma.",
+    "primaryCta": "Pedir ahora",
+    "primaryCtaHref": "#pedir",
     "secondaryCta": "Ver la carta",
     "secondaryCtaHref": "#carta",
     "image": "https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=2400&q=80&fm=webp",
@@ -124,7 +124,7 @@
   },
   "seo": {
     "title": "Pato Ramen · 缘味 | Ramen y pato asado en Barcelona",
-    "description": "Ramen de caldo lento, pato lacado y dim sum al vapor en Carrer de Villarroel, Barcelona. Reserva tu mesa en una sala de madera, vapor y penumbra dorada.",
+    "description": "Ramen de caldo lento, pato tierno y dim sum al vapor en Carrer de Villarroel 255, Barcelona. Reserva tu mesa en una sala de madera, vapor y penumbra dorada.",
     "ogImage": "https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=2400&q=80&fm=webp",
     "ogImageAlt": "Cuenco de ramen humeante en Pato Ramen, Barcelona",
     "locale": "es_ES",
@@ -135,9 +135,10 @@
     "keywords": [
       "ramen Barcelona",
       "pato lacado",
+      "pato tierno",
       "dim sum Barcelona",
       "restaurante asiático Eixample",
-      "Carrer de Villarroel"
+      "Carrer de Villarroel 255"
     ],
     "schemaType": "Restaurant",
     "twitterCard": "summary_large_image"
@@ -166,13 +167,13 @@
         "href": "#opiniones"
       },
       {
-        "label": "Reservas",
-        "href": "#reservas"
+        "label": "Pedir",
+        "href": "#pedir"
       }
     ],
     "cta": {
-      "label": "Reservar",
-      "href": "#reservas"
+      "label": "Pedir",
+      "href": "#pedir"
     },
     "openMenuLabel": "Abrir menú",
     "closeMenuLabel": "Cerrar menú",
@@ -180,28 +181,28 @@
   },
   "business": {
     "_note": "PLACEHOLDER: dato ilustrativo, sustituir por el real del cliente",
-    "legalName": "Pato Ramen S.L.",
+    "legalName": "XIAOZHUPAI S.L.",
     "address": {
-      "streetAddress": "Carrer de Villarroel, 112",
-      "postalCode": "08011",
+      "streetAddress": "Carrer de Villarroel, 255",
+      "postalCode": "08036",
       "addressLocality": "Barcelona",
       "addressRegion": "Cataluña",
       "addressCountry": "ES",
-      "display": "Carrer de Villarroel, 112 · 08011 Barcelona",
-      "_placeholder": true
+      "display": "Carrer de Villarroel, 255 · 08036 Barcelona",
+      "_placeholder": false
     },
-    "phone": "+34 931 00 00 00",
-    "phoneHref": "tel:+34931000000",
-    "email": "hola@patoramen.example",
-    "emailHref": "mailto:hola@patoramen.example",
+    "phone": "+34 603 72 82 24",
+    "phoneHref": "tel:+34603728224",
+    "email": "",
+    "emailHref": "",
     "geo": {
-      "latitude": 41.3856,
-      "longitude": 2.1559,
-      "_placeholder": true
+      "latitude": 41.3920,
+      "longitude": 2.1475,
+      "_placeholder": false
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+Villarroel+Barcelona",
+    "mapUrl": "https://www.google.com/maps/place/Pato+Ramen+Restaurante+%E7%BC%98%E5%91%B3/@41.3919806,2.1474443,21z/data=!3m1!5s0x12a4a29d279a9d49:0xca7853ddc35d35c3!4m6!3m5!1s0x12a4a3802e04c34f:0xb2d3ae8d9387f918!8m2!3d41.3920132!4d2.1475471!16s%2Fg%2F11zddzsywb?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
     "priceRange": "€€",
-    "averageTicket": "28 – 38 € por persona",
+    "averageTicket": "10 - 20 € por persona",
     "servesCuisine": [
       "Ramen",
       "Cocina cantonesa",
@@ -213,42 +214,27 @@
     "openingHours": {
       "display": [
         {
-          "days": "Martes – Jueves",
-          "hours": "13:00 – 16:00 · 20:00 – 23:30"
-        },
-        {
-          "days": "Viernes – Sábado",
-          "hours": "13:00 – 16:30 · 20:00 – 00:30"
-        },
-        {
-          "days": "Domingo",
-          "hours": "13:00 – 17:00"
-        },
-        {
-          "days": "Lunes",
-          "hours": "Cerrado"
+          "days": "Lunes – Domingo",
+          "hours": "12:30 - 16:00 · 19:00 – 23:30"
         }
       ],
       "schema": [
-        "Tu,We,Th 13:00-16:00",
-        "Tu,We,Th 20:00-23:30",
-        "Fr,Sa 13:00-16:30",
-        "Fr,Sa 20:00-00:30",
-        "Su 13:00-17:00"
+        "Mo,Tu,We,Th,Fr,Sa,Su 12:30-16:00",
+        "Mo,Tu,We,Th,Fr,Sa,Su 19:30-23:30"
       ]
     },
     "social": [
       {
         "label": "Instagram",
-        "href": "https://instagram.com/patoramen",
-        "handle": "@patoramen",
-        "_placeholder": true
+        "href": "https://www.instagram.com/yuanwei_patoramen",
+        "handle": "@yuanwei_patoramen",
+        "_placeholder": false
       },
       {
         "label": "TikTok",
-        "href": "https://tiktok.com/@patoramen",
-        "handle": "@patoramen",
-        "_placeholder": true
+        "href": "https://www.tiktok.com/@patoramen_yuanwei",
+        "handle": "@yuanwei_patoramen",
+        "_placeholder": false
       }
     ]
   },
@@ -256,7 +242,7 @@
     "words": [
       "Ramen",
       "拉面",
-      "Pato lacado",
+      "Pato tierno",
       "烧鸭",
       "Dim sum",
       "点心",
@@ -281,7 +267,7 @@
       "meaning": "Sabor del destino"
     },
     {
-      "text": "拉面",
+      "text": "汤面",
       "lang": "zh-Hans",
       "font": "Noto Serif SC",
       "placement": "platos-left",
@@ -329,106 +315,102 @@
       "text": "一期一会",
       "lang": "ja",
       "font": "Noto Serif JP",
-      "placement": "reservas-right",
+      "placement": "pedir-right",
       "sizeHint": "clamp(4rem,10vw,12rem)",
       "opacity": 0.06,
       "meaning": "Un encuentro, una oportunidad"
     }
   ],
   "signature": {
-    "eyebrow": "Tres firmas · Una misma brasa",
+    "eyebrow": "Tres especialidades · Un mismo fuego",
     "title": [
       {
-        "text": "Tres gestos",
+        "text": "Técnica, tiempo",
         "emphasis": false
       },
       {
-        "text": "que no se apuran",
+        "text": "y recetas con carácter",
         "emphasis": true
       }
     ],
-    "intro": "La cocina cabe en un tazón, una bandeja y una cesta de bambú. Lo demás es paciencia.",
+    "intro": "Una propuesta pensada al detalle: desde la paciencia de un caldo de doce horas hasta el arte de nuestro pato asado y platos de autor singulares. Aquí la cocina no se ataja; se respeta",
     "dishes": [
       {
-        "id": "ramen",
-        "name": "Ramen de caldo largo",
-        "aside": "拉面 · ラーメン",
-        "asideLang": "zh-Hans",
-        "kicker": "Doce horas de hueso",
-        "description": "Hueso de cerdo y pollo a fuego mínimo hasta que el caldo se vuelve opaco y sedoso, fideos al dente, chashu deshecho en la cuchara y un huevo de yema que se rinde al primer palillo.",
-        "price": "14,50 €",
-        "priceNote": "Extra de huevo marinado 1,50 €",
-        "image": "https://images.unsplash.com/photo-1734313276354-75c96b3c0c36?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Fideos de ramen levantados con palillos sobre un cuenco con huevo marinado de yema anaranjada y caldo oscuro",
-        "tags": [
-          "Caldo de 12 h",
-          "Chashu",
-          "Huevo ajitama",
-          "Picante opcional"
-        ]
-      },
-      {
         "id": "pato",
-        "name": "Pato asado lacado",
+        "name": "Pato estilo cantonés",
         "aside": "烧鸭",
         "asideLang": "zh-Hans",
-        "kicker": "Piel de papel de arroz",
-        "description": "Secado al aire durante dos días, lacado con maltosa y especias, asado hasta que la piel suena. Se trincha a la vista, con crepes finas, pepino y hoisin de la casa.",
-        "price": "24,00 €",
-        "priceNote": "Medio pato · Entero 44,00 €",
+        "kicker": "Tradición de Cantón, aroma e intensidad",
+        "description": "Asado al horno hasta lograr una carne melosa, tierna y profundamente sabrosa. Servido en su jugo de asado con el corte tradicional cantonés, perfecto para disfrutar en raciones de cuarto, medio o entero. Se trincha a la vista, con crepes finas, pepino y hoisin de la casa.",
+        "price": "18,95 €",
+        "priceNote": "Medio pato · Entero 34,95 €",
         "image": "https://images.unsplash.com/photo-1765441012353-10fb4701a276?auto=format&fit=crop&w=2400&q=80&fm=webp",
         "alt": "Pato asado de piel brillante y cobriza, cortado en lonchas sobre bandeja blanca con hojas de menta",
         "tags": [
-          "Lacado",
-          "Trinchado en sala",
-          "Para compartir"
+          "Especialidad de Cantón",
+          "Cuarto, medio o entero",
+          "Receta tradicional"
         ]
       },
       {
-        "id": "dimsum",
-        "name": "Dim sum al vapor",
-        "aside": "点心",
+        "id": "ramen",
+        "name": "Ramen tradicional de fideos",
+        "aside": "汤面 · ラーメン",
         "asideLang": "zh-Hans",
-        "kicker": "Bambú, vapor y paciencia",
-        "description": "Masa translúcida plegada a mano cada mañana, rellenos de gamba, cerdo y cebollino, servidos en la cesta en que se cocinaron, con una nube de vapor que sube hasta tu cara.",
-        "price": "7,50 €",
+        "kicker": "Caldo paciente y variedad de toppings",
+        "description": "Preparado a fuego lento durante horas, fideos en su punto y una amplia selección de acompañamientos: desde jugoso pato o ternera hasta falda picante, costillas de cerdo, marisco o crujiente pollo rebozado.",
+        "price": "9,95 €",
+        "priceNote": "Precio promedio ramen",
+        "image": "https://images.unsplash.com/photo-1734313276354-75c96b3c0c36?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Fideos de ramen levantados con palillos sobre un cuenco con huevo marinado de yema anaranjada y caldo oscuro",
+        "tags": [
+          "Caldo casero",
+          "Variedad de proteina",
+          "Opción picante",
+          "Tazón reconfortante"
+        ]
+      },
+      {
+        "id": "arrozPina",
+        "name": "Arroz en piña",
+        "aside": "菠萝饭",
+        "asideLang": "zh-Hans",
+        "kicker": "Exótico, aromático y servido en fruta fresca",
+        "description": "Un vistoso salteado al wok de arroz con jugosos trozos de pollo, huevo, maíz, guisantes y zanahoria, saboreado con el toque agridulce y fresco de los dados de piña. Servido directamente en media piña natural recién tallada, una combinación de texturas y colores difícil de encontrar en Barcelona.",
+        "price": "12,95 €",
         "priceNote": "Cesta de 4 piezas",
         "image": "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Cesta de bambú abierta con dumplings humeantes y un cuenco de salsa oscura con cilantro, con vapor a contraluz",
+        "alt": "Wok de arroz con jugosos trozos de pollo, huevo, maíz, guisantes y zanahoria, saboreado con el toque agridulce y fresco de los dados de piña.",
         "tags": [
-          "Hecho a mano",
-          "Gamba y cebollino",
-          "Vapor de bambú"
+          "Pollo y verduras",
+          "Servido en piña natural",
+          "Especialidad de la casa"
         ]
       }
     ],
     "viewDishLabel": "Ver en la carta"
   },
   "story": {
-    "eyebrow": "Nuestra historia",
+    "eyebrow": "El secreto del caldo",
     "kanji": "缘",
     "title": [
       {
-        "text": "Donde el",
+        "text": "El alma de la receta",
         "emphasis": false
       },
       {
-        "text": "vapor",
+        "text": " original",
         "emphasis": true
-      },
-      {
-        "text": "aprendió a esperar",
-        "emphasis": false
       }
     ],
     "paragraphs": [
-      "Pato Ramen nace de una obsesión doméstica: que un caldo necesita más tiempo del que el mundo suele conceder. Cada madrugada, antes de que Villarroel despierte, los huesos ya llevan horas rindiéndose en la olla.",
-      "Caminamos entre dos tradiciones, el ramen de las barras japonesas y el pato lacado de los hornos cantoneses, y descubrimos que hablaban el mismo idioma: fuego bajo, grasa dorada, silencio atento. 缘味 es esa palabra: el sabor que llega por destino.",
-      "La sala es pequeña a propósito. Madera oscura, farolillos que apenas iluminan, una barra donde ves cómo se trincha el pato. Venir aquí es aceptar el ritmo: nada se apura, todo llega caliente."
+      "A diferencia de la mayoría de opciones en Barcelona, nuestro origen no está en la tradición japonesa, sino en las recetas ancestrales de las sopas de fideos chinas (汤面). Un legado gastronómico donde el secreto reside en el respeto absoluto al proceso original.",
+      "Cada mañana preparamos nuestros caldos desde cero, de forma 100% casera y utilizando exclusivamente ingredientes naturales. Huesos frescos, verduras seleccionadas y fuego lento durante doce horas. Sin aditivos, sin atajos y sin un solo conservante.",
+      "El resultado es un fondo espeso, puro y profundamente reconfortante. El verdadero sabor de la tradición oriental, elaborado como se ha hecho siempre: con tiempo, paciencia y máxima honestidad en la olla."
     ],
     "pullQuote": {
-      "text": "Un buen caldo no se cocina, se acompaña.",
-      "attribution": "Cocina de Pato Ramen",
+      "text": "Sin conservantes ni atajos: solo ingredientes naturales y horas de fuego.",
+      "attribution": "Cocina de Pato Ramen · 缘味",
       "_note": "Cita de marca, texto ilustrativo"
     },
     "stats": [
@@ -438,19 +420,19 @@
         "label": "de cocción lenta del caldo"
       },
       {
-        "value": "48",
-        "unit": "h",
-        "label": "de secado al aire del pato"
+        "value": "100",
+        "unit": "%",
+        "label": "ingredientes naturales y caseros"
       },
       {
-        "value": "32",
-        "unit": "",
-        "label": "plazas, ni una más"
+        "value": "44",
+        "unit": "plazas",
+        "label": "ni una más"
       },
       {
         "value": "0",
-        "unit": "",
-        "label": "atajos en la cocina"
+        "unit": "%",
+        "label": "conservantes o aditivos"
       }
     ],
     "image": "https://images.unsplash.com/photo-1790102563096-64a25de9e9c0?auto=format&fit=crop&w=2400&q=80&fm=webp",
@@ -458,12 +440,12 @@
     "overlays": [
       {
         "type": "caption",
-        "text": "La barra, 19:40 h",
+        "text": "La cocina, 21:40 h",
         "position": "bottom-left"
       },
       {
         "type": "badge",
-        "text": "Desde 2019",
+        "text": "Desde 2026",
         "position": "top-right",
         "_note": "Año ilustrativo"
       },
@@ -494,130 +476,569 @@
     "intro": "Una carta corta, escrita a mano cada semana según mercado y humor del caldo. (Platos y precios ilustrativos.)",
     "categories": [
       {
-        "id": "ramen",
-        "name": "Ramen",
-        "aside": "拉面",
+        "id": "entrantes",
+        "name": "Entrantes",
+        "aside": "前菜",
         "items": [
           {
-            "name": "Shoyu de pato",
-            "description": "Caldo claro de pato y soja, fideos finos, pechuga ahumada, menma y cebollino.",
-            "price": "15,00 €",
-            "note": "Favorito de la casa",
+            "name": "Edamame",
+            "description": "Habas de soja cocidas.",
+            "price": "3,50 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Ensalada de algas wakame",
+            "description": "Algas wakame frescas.",
+            "price": "3,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Ensalada de la casa",
+            "description": "Mezcla fresca de verduras de temporada.",
+            "price": "4,50 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Rollitos frescos",
+            "description": "Verduras crujientes acompañadas de salsa de cacahuete.",
+            "price": "6,50 €",
+            "note": "4 unidades",
+            "tags": []
+          },
+          {
+            "name": "Ensalada de pepino",
+            "description": "Pepino fresco aliñado con vinagre y sésamo.",
+            "price": "3,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Ternera con salsa de soja",
+            "description": "Ternera tierna marinada en salsa de soja.",
+            "price": "4,50 €",
+            "note": "",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "sopas",
+        "name": "Sopas",
+        "aside": "汤",
+        "items": [
+          {
+            "name": "Sopa de miso",
+            "description": "Caldo dashi tradicional con miso y tofu.",
+            "price": "3,50 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sopa de pollo",
+            "description": "Caldo claro de pollo casero.",
+            "price": "3,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sopa de ternera",
+            "description": "Caldo profundo de ternera.",
+            "price": "3,95 €",
+            "note": "",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "plato-principal",
+        "name": "Plato principal",
+        "aside": "主菜",
+        "items": [
+          {
+            "name": "Arroz blanco",
+            "description": "Arroz al vapor recién cocido.",
+            "price": "2,50 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Panecillos de conejo con crema",
+            "description": "Bao suave relleno con conejo y salsa cremosa.",
+            "price": "5,50 €",
+            "note": "4 unidades",
+            "tags": []
+          },
+          {
+            "name": "Bao de cerdo asado",
+            "description": "Panecillo al vapor con cerdo caramelizado.",
+            "price": "5,50 €",
+            "note": "4 unidades",
+            "tags": []
+          },
+          {
+            "name": "Empanadillas de gambas",
+            "description": "Pastel crujiente relleno de gambas jugosas.",
+            "price": "5,95 €",
+            "note": "5 unidades",
+            "tags": []
+          },
+          {
+            "name": "Shaomai de cerdo",
+            "description": "Dumpling abierto coronado con huevas.",
+            "price": "5,50 €",
+            "note": "5 unidades",
+            "tags": []
+          },
+          {
+            "name": "Gyozas de pollo",
+            "description": "Empanadillas de pollo servidas con salsa de soja.",
+            "price": "4,95 €",
+            "note": "6 unidades",
+            "tags": []
+          },
+          {
+            "name": "Gyozas de marisco",
+            "description": "Empanadillas rellenas de camarones y calamar.",
+            "price": "5,95 €",
+            "note": "6 unidades",
+            "tags": []
+          },
+          {
+            "name": "Gyozas de verduras",
+            "description": "Empanadillas vegetales crujientes.",
+            "price": "4,50 €",
+            "note": "6 unidades",
+            "tags": [
+              "Vegetariano"
+            ]
+          },
+          {
+            "name": "Gyozas de cerdo",
+            "description": "Dumplings de cerdo sabrosos y jugosos.",
+            "price": "4,95 €",
+            "note": "6 unidades",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "frituras",
+        "name": "Frituras",
+        "aside": "炸物",
+        "items": [
+          {
+            "name": "Tempura de verduras",
+            "description": "Selección de verduras rebozadas al estilo crujiente.",
+            "price": "4,95 €",
+            "note": "Ración",
+            "tags": [
+              "Vegetariano"
+            ]
+          },
+          {
+            "name": "Moniato frito",
+            "description": "Batata crujiente servida con un toque de miel.",
+            "price": "4,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Takoyaki",
+            "description": "Bolitas crujientes tradicionales rellenas de pulpo.",
+            "price": "5,50 €",
+            "note": "4 unidades",
+            "tags": []
+          },
+          {
+            "name": "Rollitos de primavera",
+            "description": "Rollitos crujientes rellenos de verduras.",
+            "price": "4,95 €",
+            "note": "6 unidades",
+            "tags": [
+              "Vegetariano"
+            ]
+          },
+          {
+            "name": "Samosas de curry",
+            "description": "Pastel triangular crujiente relleno de curry aromático.",
+            "price": "4,95 €",
+            "note": "6 unidades",
+            "tags": []
+          },
+          {
+            "name": "Rollitos de pollo y mango",
+            "description": "Rollitos crujientes con combinación de pollo y mango fresco.",
+            "price": "5,95 €",
+            "note": "2 unidades",
+            "tags": []
+          },
+          {
+            "name": "Pan chino frito",
+            "description": "Pan crujiente acompañado de miel.",
+            "price": "2,95 €",
+            "note": "2 unidades",
+            "tags": []
+          },
+          {
+            "name": "Fritura variada",
+            "description": "Combinado de gyozas, rollitos, shaomai y pollo crujiente.",
+            "price": "10,50 €",
+            "note": "Para compartir",
+            "tags": [
+              "Variado"
+            ]
+          },
+          {
+            "name": "Surtido variado",
+            "description": "Selección de samosas, wonton, empanadillas y bao de cerdo.",
+            "price": "10,95 €",
+            "note": "Para compartir",
+            "tags": [
+              "Variado"
+            ]
+          },
+          {
+            "name": "Pollo crujiente",
+            "description": "Pollo rebozado tierno por dentro y muy crujiente.",
+            "price": "7,95 €",
+            "note": "6 unidades",
+            "tags": []
+          },
+          {
+            "name": "Gambas crujientes",
+            "description": "Gambas doradas con rebozado crujiente.",
+            "price": "6,50 €",
+            "note": "6 unidades",
+            "tags": []
+          },
+          {
+            "name": "Pollo rebozado con salsa",
+            "description": "Pollo rebozado bañado en salsa pegajosa y sabrosa.",
+            "price": "5,50 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Wonton frito",
+            "description": "Wontons crujientes acompañados de salsa dulce.",
+            "price": "5,95 €",
+            "note": "10 unidades",
+            "tags": []
+          },
+          {
+            "name": "Gambas con sal y pimienta",
+            "description": "Gambas crujientes sazonadas con mezcla de especias, sal y pimienta.",
+            "price": "11,50 €",
+            "note": "",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "arroces",
+        "name": "Arroces",
+        "aside": "炒饭",
+        "items": [
+          {
+            "name": "Arroz frito con ternera",
+            "description": "Arroz salteado al wok con ternera tierna.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Arroz frito cinco aromas",
+            "description": "Arroz frito aromático especiado con verduras.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Arroz frito con gambas",
+            "description": "Arroz frito salteado con gambas jugosas.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Arroz frito con pato",
+            "description": "Arroz salteado con finos trozos de pato asado.",
+            "price": "8,95 €",
+            "note": "",
             "tags": [
               "Pato"
             ]
           },
           {
-            "name": "Tonkotsu 12 h",
-            "description": "Cerdo y hueso al fuego bajo, chashu, huevo ajitama, ajo negro y nori.",
-            "price": "14,50 €",
+            "name": "Arroz frito con pollo",
+            "description": "Arroz salteado con pollo desmenuzado.",
+            "price": "7,95 €",
             "note": "",
+            "tags": []
+          },
+          {
+            "name": "Arroz en piña",
+            "description": "Arroz salteado en piña fresca con pollo, verduras y toque agridulce.",
+            "price": "12,95 €",
+            "note": "Especialidad",
             "tags": [
-              "Cerdo"
+              "Favorito"
             ]
           },
           {
-            "name": "Miso picante",
-            "description": "Miso rojo, aceite de chile tostado, maíz y mantequilla de sésamo.",
-            "price": "14,00 €",
+            "name": "Arroz con ternera en salsa de ostras",
+            "description": "Arroz con ternera jugosa en salsa de ostras.",
+            "price": "9,50 €",
+            "note": "",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "udon",
+        "name": "Udon",
+        "aside": "乌冬",
+        "items": [
+          {
+            "name": "Udon cubierto",
+            "description": "Fideos udon en caldo servidos con topping crujiente.",
+            "price": "9,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Udon salteado con gambas",
+            "description": "Fideos udon salteados con gambas frescas y verduras.",
+            "price": "9,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Udon salteado con pollo",
+            "description": "Udon salteado al wok con pollo y verduras.",
+            "price": "9,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Udon salteado con ternera",
+            "description": "Udon salteado con tiras de ternera jugosa.",
+            "price": "9,95 €",
+            "note": "",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "fideos",
+        "name": "Fideos y tallarines",
+        "aside": "面条",
+        "items": [
+          {
+            "name": "Tallarines salteados con gambas",
+            "description": "Tallarines al wok con gambas crujientes y verduras.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Tallarines salteados con pollo",
+            "description": "Tallarines salteados con pollo tierno.",
+            "price": "7,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Tallarines salteados con ternera",
+            "description": "Tallarines salteados con ternera aromática.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Fideos de arroz salteados con pollo",
+            "description": "Fideos finos de arroz salteados al wok con pollo.",
+            "price": "7,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Fideos de arroz salteados con ternera",
+            "description": "Fideos suaves de arroz salteados con ternera.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Fideos de arroz salteados con gambas",
+            "description": "Fideos de arroz salteados con gambas frescas.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "asiatica",
+        "name": "Comida asiática",
+        "aside": "亚洲菜",
+        "items": [
+          {
+            "name": "Pollo con salsa de ostras",
+            "description": "Tiras de pollo tierno elaboradas en salsa suave de ostras.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Ternera con salsa de ostras",
+            "description": "Ternera salteada en salsa concentrada de ostras.",
+            "price": "9,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Pollo al curry",
+            "description": "Pollo cocinado con curry aromático al estilo oriental.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Pollo agridulce",
+            "description": "Bocado de pollo crujiente bañado en salsa agridulce.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Gambas con salsa de coco",
+            "description": "Gambas preparadas en salsa cremosa de leche de coco.",
+            "price": "11,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Gambas a la plancha",
+            "description": "Gambas frescas preparadas sobre plancha caliente.",
+            "price": "14,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Ternera a la plancha",
+            "description": "Ternera premium servida en plancha de hierro hirviendo.",
+            "price": "14,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Pollo a la plancha",
+            "description": "Pollo jugoso salteado a la plancha.",
+            "price": "13,95 €",
+            "note": "",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "ramen",
+        "name": "Sopas de fideos",
+        "aside": "汤面",
+        "items": [
+          {
+            "name": "Sopa de fideos con ternera",
+            "description": "Caldo profundo cocinado a fuego lento con ternera tierna.",
+            "price": "10,50 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sopa de fideos con carne picada y encurtidos",
+            "description": "Fondo reconfortante con carne picada y verduras encurtidas.",
+            "price": "7,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sopa de fideos con costillas de cerdo",
+            "description": "Caldo casero servido con costillas de cerdo jugosas.",
+            "price": "8,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sopa de fideos picante con falda de ternera",
+            "description": "Caldo con toque de chile tostado y falda de ternera.",
+            "price": "9,95 €",
             "note": "Picante",
             "tags": [
               "Picante"
             ]
           },
           {
-            "name": "Ramen de setas",
-            "description": "Dashi de kombu y shiitake, tofu sedoso y aceite de trufa blanca.",
-            "price": "13,50 €",
-            "note": "Vegano",
+            "name": "Sopa de fideos con pollo rebozado",
+            "description": "Caldo tradicional servido con pollo rebozado crujiente.",
+            "price": "9,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sopa de fideos con gambas rebozadas",
+            "description": "Caldo de la casa con gambas rebozadas al momento.",
+            "price": "10,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sopa de fideos con marisco",
+            "description": "Caldo aromatizado con selección de mariscos frescos.",
+            "price": "11,95 €",
+            "note": "",
+            "tags": []
+          },
+          {
+            "name": "Sopa de fideos con pato estilo cantonés",
+            "description": "Nuestra especialidad de fideos con pato asado cantonés.",
+            "price": "12,95 €",
+            "note": "Especialidad",
             "tags": [
-              "Vegano"
+              "Pato"
             ]
           }
         ]
       },
       {
         "id": "pato",
-        "name": "Pato asado",
+        "name": "Pato estilo cantonés",
         "aside": "烧鸭",
         "items": [
           {
-            "name": "Pato lacado, medio",
-            "description": "Trinchado en sala con crepes, pepino, cebolleta y hoisin.",
-            "price": "24,00 €",
-            "note": "Encargar con 24 h en grupos",
+            "name": "Pato estilo cantonés entero",
+            "description": "Pato completo asado según la receta tradicional de Cantón.",
+            "price": "34,95 €",
+            "note": "Para 3-4 personas",
             "tags": [
               "Compartir"
             ]
           },
           {
-            "name": "Arroz con pato y encurtidos",
-            "description": "Arroz blanco, lonchas de pato lacado y encurtido crujiente de mostaza.",
-            "price": "13,00 €",
-            "note": "",
-            "tags": []
+            "name": "Pato estilo cantonés 1/2",
+            "description": "Medio pato asado maderado con especias tradicionales.",
+            "price": "18,95 €",
+            "note": "Para 2 personas",
+            "tags": [
+              "Compartir"
+            ]
           },
           {
-            "name": "Bao de pato",
-            "description": "Pan al vapor, pato deshilachado, salsa de ciruela y pepino.",
-            "price": "6,50 €",
-            "note": "Unidad",
-            "tags": []
-          }
-        ]
-      },
-      {
-        "id": "dimsum",
-        "name": "Dim sum",
-        "aside": "点心",
-        "items": [
-          {
-            "name": "Xiao long bao",
-            "description": "Dumpling de sopa de cerdo y jengibre. Pincha, sorbe, después muerde.",
-            "price": "7,90 €",
-            "note": "4 piezas",
-            "tags": []
-          },
-          {
-            "name": "Shumai de gamba",
-            "description": "Gamba, cerdo y cebollino con corona de huevas de pez.",
-            "price": "7,50 €",
-            "note": "4 piezas",
-            "tags": []
-          },
-          {
-            "name": "Gyoza a la plancha",
-            "description": "Base tostada, relleno de col y cerdo, vinagre negro.",
-            "price": "6,90 €",
-            "note": "5 piezas",
-            "tags": []
-          }
-        ]
-      },
-      {
-        "id": "bebidas",
-        "name": "Bebidas",
-        "aside": "茶酒",
-        "items": [
-          {
-            "name": "Té de jazmín en tetera",
-            "description": "Hojas enteras, infusión lenta.",
-            "price": "3,50 €",
-            "note": "",
-            "tags": []
-          },
-          {
-            "name": "Sake de la casa",
-            "description": "Frío o caliente, servido en tokkuri.",
-            "price": "5,50 €",
-            "note": "Copa",
-            "tags": []
-          },
-          {
-            "name": "Cerveza artesana asiática",
-            "description": "Lager seca de arroz, muy fría.",
-            "price": "4,50 €",
-            "note": "",
+            "name": "Pato estilo cantonés 1/4",
+            "description": "Ración individual de cuarto de pato asado jugoso.",
+            "price": "9,95 €",
+            "note": "Ración individual",
             "tags": []
           }
         ]
@@ -625,28 +1046,28 @@
     ],
     "highlights": [
       {
-        "title": "Shoyu de pato",
-        "description": "El ramen que cruza las dos tradiciones.",
+        "title": "Bao de cerdo asado",
+        "description": "Pan suave al vapor con cerdo caramelizado.",
         "image": "https://images.unsplash.com/photo-1504669887860-f6d4cc3feb4b?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Cuenco negro de fideos en caldo claro con carne estofada, huevo duro, cebollino y cilantro"
+        "alt": "Panecillos bao al vapor rellenados con carne de cerdo en salsa caramelizada"
       },
       {
-        "title": "Pato con arroz",
-        "description": "Laca, sal y un golpe de encurtido.",
-        "image": "https://images.unsplash.com/photo-1759418661781-2b37f26c4573?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Plato de loza con lonchas de carne lacada oscura sobre arroz blanco y encurtido de mostaza"
-      },
-      {
-        "title": "Xiao long bao",
-        "description": "Sopa escondida en una piel finísima.",
-        "image": "https://images.unsplash.com/photo-1779333277496-a5106680169c?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Cesta de bambú con dumplings de sopa de punta anaranjada sobre mesa roja"
-      },
-      {
-        "title": "Shumai",
-        "description": "Gamba y cerdo bajo una corona dorada.",
+        "title": "Shaomai de cerdo",
+        "description": "Dumpling abierto coronado con huevas.",
         "image": "https://images.unsplash.com/photo-1563245370-63ffc97abdbd?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Shumai dorados en una vaporera negra sobre cestas de bambú"
+        "alt": "Shaomai de cerdo dorados servidos en cesta tradicional"
+      },
+      {
+        "title": "Gyozas de marisco",
+        "description": "Empanadillas rellenas de camarones y calamar.",
+        "image": "https://images.unsplash.com/photo-1779333277496-a5106680169c?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Empanadillas gyozas doradas a la plancha sobre plato de cerámica"
+      },
+      {
+        "title": "Takoyaki",
+        "description": "Bolitas crujientes de pulpo.",
+        "image": "https://images.unsplash.com/photo-1759418661781-2b37f26c4573?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "alt": "Bolitas de takoyaki servidas con salsa tradicional y virutas de bonito"
       }
     ],
     "downloadMenuLabel": "Descargar carta completa (PDF)",
@@ -667,7 +1088,6 @@
         "emphasis": true
       }
     ],
-    "_note": "Citas y medios ILUSTRATIVOS (placeholders). Sustituir por reseñas y prensa reales antes de publicar.",
     "press": [
       {
         "quote": "Un caldo que sabe a tiempo bien empleado. El mejor ramen del Eixample.",
@@ -676,59 +1096,59 @@
         "_placeholder": true
       },
       {
-        "quote": "El pato lacado más honesto de la ciudad: piel que suena, carne que se deshace.",
+        "quote": "El pato tierno más honesto de la ciudad: piel que suena, carne que se deshace.",
         "outlet": "Revista Mesa y Brasa",
         "author": "Sección Mesas",
         "_placeholder": true
       },
       {
-        "quote": "Pequeño, oscuro y absolutamente adictivo. Llega con hambre y sin prisa.",
-        "outlet": "Guía Barcelona Noctámbula",
+        "quote": "Es un buen lugar para ir en grupo o en familia. El servicio es rápido y el personal te explica el menú si lo necesitas.",
+        "outlet": "Corner Inc",
         "author": "Redacción",
-        "_placeholder": true
+        "_placeholder": false
       }
     ],
     "reviews": [
       {
-        "author": "Marta S.",
-        "rating": 5,
-        "date": "Septiembre 2026",
-        "text": "Entré por el ramen y salí pensando en el pato. La barra, la luz y el vapor son una sola cosa.",
-        "source": "Reseña de cliente",
-        "_placeholder": true
-      },
-      {
-        "author": "Jordi P.",
+        "author": "Laopi Cai",
         "rating": 5,
         "date": "Agosto 2026",
-        "text": "El xiao long bao llega humeante y el caldo del shoyu de pato merece un aplauso. Reservad.",
+        "text": "Ambiente estupendo y comida deliciosa. Especialmente el arroz frito con piña, increíblemente fresco.",
         "source": "Reseña de cliente",
-        "_placeholder": true
+        "_placeholder": false
       },
       {
-        "author": "Lucía y Ahmed",
+        "author": "Carlota Costales",
         "rating": 5,
-        "date": "Julio 2026",
-        "text": "Cenamos pato entero entre cuatro. Trincharlo delante de ti es puro teatro. Volveremos.",
+        "date": "Septiembre 2026",
+        "text": "En el local han sido súper atentos y amables. Un ramen muy bueno, económico y muy recomendable.",
         "source": "Reseña de cliente",
-        "_placeholder": true
+        "_placeholder": false
       },
       {
-        "author": "Chen W.",
-        "rating": 4,
-        "date": "Junio 2026",
-        "text": "Auténtico, sin concesiones. Faltan mesas, sobra sabor.",
+        "author": "Lorena Santafe",
+        "rating": 5,
+        "date": "Agosto 2026",
+        "text": "Excelente servicio el del camarero, se nota la profesionalidad y agradecidos con el precio. Volveremos.",
         "source": "Reseña de cliente",
-        "_placeholder": true
+        "_placeholder": false
+      },
+      {
+        "author": "Jordi Guo",
+        "rating": 5,
+        "date": "Septiembre 2026",
+        "text": "Ambiente calmado, buen sabor y porciones inesperadamente generosas.",
+        "source": "Reseña de cliente",
+        "_placeholder": false
       }
     ],
     "rating": {
-      "value": 4.8,
+      "value": 4.9,
       "max": 5,
-      "count": 412,
+      "count": 70,
       "label": "valoración media",
       "source": "Media de reseñas (ilustrativa)",
-      "_placeholder": true
+      "_placeholder": false
     }
   },
   "gallery": {
@@ -747,7 +1167,7 @@
     "items": [
       {
         "image": "https://images.unsplash.com/photo-1765441012353-10fb4701a276?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Pato lacado de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta",
+        "alt": "Pato tierno de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta",
         "caption": "Piel, laca, fuego",
         "span": "wide"
       },
@@ -795,184 +1215,73 @@
       }
     ]
   },
-  "reservation": {
-    "id": "reservas",
-    "eyebrow": "Reservas",
+  "order": {
+    "id": "pedir",
+    "eyebrow": "Pedidos y reservas",
     "kanji": "缘",
     "title": [
       {
-        "text": "Guarda tu",
+        "text": "Disfruta de nuestra",
         "emphasis": false
       },
       {
-        "text": "sitio",
+        "text": "mesa",
         "emphasis": true
       },
       {
-        "text": "en la barra",
+        "text": "o pídelo a casa",
         "emphasis": false
       }
     ],
-    "copy": "Treinta y dos plazas y un caldo que no espera. Reserva tu mesa y te guardaremos el mejor rincón de madera y vapor. Para grupos de más de 8 personas, escríbenos.",
+    "copy": "Nuestra cocina está lista tanto si prefieres acompañarnos en el local como si deseas recibir un tazón humeante en la puerta de tu hogar.",
     "image": "https://images.unsplash.com/photo-1601351841251-766245326eee?auto=format&fit=crop&w=2400&q=80&fm=webp",
-    "imageAlt": "Barra de izakaya con farolillos de papel rojos iluminando la zona de reservas",
-    "note": "Confirmaremos tu reserva por correo en menos de 24 horas.",
-    "form": {
-      "fields": {
-        "name": {
-          "label": "Nombre",
-          "placeholder": "Tu nombre",
-          "autocomplete": "name"
-        },
-        "email": {
-          "label": "Correo electrónico",
-          "placeholder": "tu@correo.com",
-          "autocomplete": "email"
-        },
-        "phone": {
-          "label": "Teléfono",
-          "placeholder": "+34 600 000 000",
-          "autocomplete": "tel"
-        },
-        "date": {
-          "label": "Fecha",
-          "placeholder": "dd/mm/aaaa"
-        },
-        "time": {
-          "label": "Hora",
-          "placeholder": "Elige una hora"
-        },
-        "partySize": {
-          "label": "Comensales",
-          "placeholder": "¿Cuántos sois?"
-        },
-        "notes": {
-          "label": "Alergias o peticiones",
-          "placeholder": "Alergias, cumpleaños, el pato entero por encargo..."
-        },
-        "privacy": {
-          "label": "Acepto la política de privacidad y el tratamiento de mis datos para gestionar la reserva."
-        }
+    "imageAlt": "Barra de izakaya con farolillos de papel rojos",
+    "platforms": [
+      {
+        "name": "Glovo",
+        "label": "Pedir en Glovo",
+        "href": "https://glovoapp.com/en/es/barcelona/stores/pato-ramen-barcelona",
+        "description": "Entrega rápida en Barcelona"
       },
-      "partySizeOptions": [
-        {
-          "value": "1",
-          "label": "1 persona"
-        },
-        {
-          "value": "2",
-          "label": "2 personas"
-        },
-        {
-          "value": "3",
-          "label": "3 personas"
-        },
-        {
-          "value": "4",
-          "label": "4 personas"
-        },
-        {
-          "value": "5",
-          "label": "5 personas"
-        },
-        {
-          "value": "6",
-          "label": "6 personas"
-        },
-        {
-          "value": "7",
-          "label": "7 personas"
-        },
-        {
-          "value": "8",
-          "label": "8 personas"
-        }
-      ],
-      "timeSlots": [
-        {
-          "group": "Comida",
-          "slots": [
-            "13:00",
-            "13:30",
-            "14:00",
-            "14:30",
-            "15:00",
-            "15:30"
-          ]
-        },
-        {
-          "group": "Cena",
-          "slots": [
-            "20:00",
-            "20:30",
-            "21:00",
-            "21:30",
-            "22:00",
-            "22:30",
-            "23:00"
-          ]
-        }
-      ],
-      "validation": {
-        "nameRequired": "Dinos tu nombre para guardarte la mesa.",
-        "nameMin": "El nombre debe tener al menos 2 caracteres.",
-        "emailRequired": "Necesitamos tu correo para confirmar la reserva.",
-        "emailInvalid": "Introduce un correo electrónico válido.",
-        "phoneInvalid": "Introduce un teléfono válido (9 a 15 dígitos).",
-        "dateRequired": "Elige el día en que quieres venir.",
-        "datePast": "La fecha no puede ser anterior a hoy.",
-        "dateClosed": "Los lunes descansamos. Elige otro día.",
-        "timeRequired": "Elige una hora.",
-        "partySizeRequired": "Indica cuántos comensales sois.",
-        "partySizeMax": "Para más de 8 personas, escríbenos por correo.",
-        "notesMax": "El mensaje no puede superar los 500 caracteres.",
-        "privacyRequired": "Debes aceptar la política de privacidad."
+      {
+        "name": "Rice",
+        "label": "Pedir en Rice",
+        "href": "https://riceapp.com",
+        "description": "Comida de calidad a domicilio"
       },
-      "submitLabel": "Solicitar reserva",
-      "submittingLabel": "Enviando...",
-      "success": {
-        "title": "Mesa solicitada",
-        "message": "Gracias, {name}. Hemos recibido tu solicitud y te escribiremos a {email} en menos de 24 horas para confirmarla."
-      },
-      "error": {
-        "title": "Algo se ha enfriado",
-        "message": "No hemos podido enviar tu reserva. Inténtalo de nuevo o llámanos al +34 931 00 00 00."
-      },
-      "rateLimited": "Demasiados intentos. Espera unos minutos e inténtalo de nuevo."
-    },
-    "endpoint": "/api/reservar",
-    "email": {
-      "to": "reservas@patoramen.example",
-      "from": "Pato Ramen <reservas@patoramen.example>",
-      "subjectTemplate": "Nueva reserva: {name} · {partySize} pax · {date} {time}",
-      "_placeholder": true
+      {
+        "name": "AIO",
+        "label": "Pedir en AIO",
+        "href": "https://aioapp.com",
+        "description": "Tu comida favorita entregada"
+      }
+    ],
+    "contact": {
+      "note": "Para asegurar tu mesa en el restaurante, llámanos directamente. Te atenderemos al momento.",
+      "phone": "+34 603 72 82 24"
     }
   },
   "footer": {
-    "tagline": "Caldo lento. Pato lacado. Fuego con memoria.",
+    "tagline": "Caldo lento. Pato cantonés. Fuego con memoria.",
     "kanji": "缘味",
     "columns": [
       {
         "title": "Visítanos",
         "lines": [
-          "Carrer de Villarroel, 112",
-          "08011 Barcelona"
+          "Carrer de Villarroel, 255",
+          "08036 Barcelona"
         ]
       },
       {
         "title": "Horarios",
         "lines": [
-          "Mar – Jue · 13:00 – 16:00 · 20:00 – 23:30",
-          "Vie – Sáb · 13:00 – 16:30 · 20:00 – 00:30",
-          "Dom · 13:00 – 17:00",
-          "Lunes cerrado"
+          "Lunes – Domingo · 12:30 – 16:00 · 19:00 – 23:30"
         ]
       },
       {
         "title": "Contacto",
         "lines": [
-          "+34 931 00 00 00",
-          "hola@patoramen.example"
+          "+34 603 72 82 24"
         ]
       }
     ],
@@ -993,11 +1302,11 @@
     "copyright": "© 2026 Pato Ramen · 缘味. Todos los derechos reservados.",
     "credit": "Hecho con paciencia, como el caldo.",
     "cta": {
-      "title": "¿Mesa para esta noche?",
-      "label": "Reservar ahora",
-      "href": "#reservas"
+      "title": "¿Te lo llevamos a casa?",
+      "label": "Pedir en Glovo",
+      "href": "https://glovoapp.com/en/es/barcelona/stores/pato-ramen-barcelona"
     },
-    "placeholderNote": "PLACEHOLDER: dato ilustrativo, sustituir por el real del cliente"
+    "placeholderNote": ""
   },
   "motion": {
     "principles": "Lento, líquido y cálido: como vapor subiendo. Sin scroll-hijacking; todo se activa con ScrollTrigger sobre el scroll nativo. Respetar prefers-reduced-motion.",
