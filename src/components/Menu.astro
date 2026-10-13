@@ -26,6 +26,34 @@ const hasPdf = menu.downloadMenuHref && menu.downloadMenuHref !== '#';
       <MenuTabs client:visible />
     </div>
 
+    <details class="group mt-6 rounded-sm border border-line bg-surface/50 p-6 md:p-8">
+      <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-[0.78rem] font-semibold uppercase tracking-[0.18em] text-primary [&::-webkit-details-marker]:hidden">
+        <span>Ver toda la carta con precios</span>
+        <span aria-hidden="true" class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/50 text-xl leading-none transition-transform duration-300 group-open:rotate-45">+</span>
+      </summary>
+      <div class="mt-10 grid gap-x-16 gap-y-10 md:grid-cols-2">
+        {
+          menu.categories.map((c) => (
+            <section>
+              <h3 class="font-serif text-2xl font-medium text-primary">{c.name}</h3>
+              <ul class="mt-4 space-y-2.5 text-sm">
+                {c.items.map((i) => (
+                  <li class="flex items-baseline gap-3">
+                    <span class="text-ink">
+                      {i.name}
+                      {i.note && <span class="text-muted"> · {i.note}</span>}
+                    </span>
+                    <span aria-hidden="true" class="h-px flex-1 border-b border-dotted border-secondary/40" />
+                    <span class="text-primary">{i.price}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))
+        }
+      </div>
+    </details>
+
     <div class="mt-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
       <p class="max-w-xl text-sm leading-relaxed text-muted">{menu.allergensNote}</p>
       <div class="flex flex-wrap gap-3">
@@ -45,6 +73,15 @@ const hasPdf = menu.downloadMenuHref && menu.downloadMenuHref !== '#';
     </div>
 
     <div class="mt-24 md:mt-32">
+      <header class="mb-10 max-w-2xl md:mb-14">
+        <p class="eyebrow mb-4" data-fade>Menús completos</p>
+        <h3 class="font-serif text-4xl font-light leading-tight text-ink md:text-5xl" data-fade>
+          Menús con bebida y postre, <span class="gold-text">a buen precio</span>
+        </h3>
+        <p class="mt-4 text-base leading-relaxed text-muted md:text-lg" data-fade>
+          Plato principal, bebida y postre en un solo menú. Raciones grandes y precios muy ajustados.
+        </p>
+      </header>
       <MenuHighlights client:visible />
     </div>
   </div>

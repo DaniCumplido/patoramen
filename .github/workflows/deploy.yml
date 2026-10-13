@@ -30,8 +30,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Vista previa en GitHub Pages: URL temporal y noindex automático.
+      # Al publicar en duckramen.com, quitar este bloque `env` (la URL de producción está en brand.json).
       - name: Build
         run: npm run build
+        env:
+          SITE_URL: https://danicumplido.github.io/patoramen/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

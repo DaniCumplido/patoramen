@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { withBase } from '../lib/seo';
+---
+
+<Layout title="Página no encontrada | Pato Ramen Barcelona" description="Esta página no existe. Vuelve a Pato Ramen, restaurante asiático en Barcelona." path="404" noindex>
+  <main id="contenido" class="flex min-h-screen flex-col items-center justify-center bg-deep px-6 text-center">
+    <p class="eyebrow mb-6">Error 404</p>
+    <h1 class="font-serif text-5xl font-light text-ink md:text-7xl">Este tazón está <span class="gold-text">vacío</span></h1>
+    <p class="mt-6 max-w-md text-lg text-muted">La página que buscas no existe, pero nuestro ramen y nuestro pato siguen esperándote.</p>
+    <a href={withBase('')} class="btn btn-primary mt-10"><span>Volver a Pato Ramen</span></a>
+  </main>
+</Layout>

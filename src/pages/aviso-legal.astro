@@ -1,0 +1,61 @@
+---
+import brand from '../data/brand.json';
+import LegalPage from '../components/LegalPage.astro';
+import { withBase } from '../lib/seo';
+
+const { legal, business } = brand;
+---
+
+<LegalPage heading="Aviso legal" description="Aviso legal e información general del sitio web de Pato Ramen, restaurante asiático en Barcelona." path="aviso-legal">
+  <section>
+    <h2>1. Datos identificativos del titular</h2>
+    <p>En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que este sitio web es titularidad de:</p>
+    <ul>
+      <li><strong>Denominación social:</strong> {legal.companyName}</li>
+      <li><strong>Nombre comercial:</strong> {legal.tradeName}</li>
+      <li><strong>NIF:</strong> {legal.taxId}</li>
+      <li><strong>Domicilio:</strong> {legal.registeredAddress}</li>
+      <li><strong>Actividad:</strong> {legal.activity}</li>
+      <li><strong>Teléfono:</strong> <a href={business.phoneHref}>{business.phone}</a></li>
+      {legal.email && <li><strong>Correo electrónico:</strong> <a href={`mailto:${legal.email}`}>{legal.email}</a></li>}
+      {legal.registry && <li><strong>Datos registrales:</strong> {legal.registry}</li>}
+      <li><strong>Sitio web:</strong> {legal.domain}</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. Objeto y condiciones de uso</h2>
+    <p>Este sitio web tiene carácter informativo: presenta el restaurante, su carta, sus horarios y las vías para reservar mesa o pedir a domicilio. El acceso y la navegación son gratuitos e implican la aceptación de este aviso legal.</p>
+    <p>La persona usuaria se compromete a hacer un uso lícito del sitio, sin vulnerar la ley, la buena fe ni los derechos de terceros, y sin realizar acciones que puedan dañar, sobrecargar o inutilizar el sitio o impedir su normal funcionamiento.</p>
+  </section>
+
+  <section>
+    <h2>3. Propiedad intelectual e industrial</h2>
+    <p>Los textos, imágenes, fotografías, logotipos, nombre comercial, diseño y demás contenidos del sitio pertenecen a {legal.companyName} o a terceros que han autorizado su uso, y están protegidos por la normativa de propiedad intelectual e industrial. Queda prohibida su reproducción, distribución o comunicación pública, total o parcial, sin autorización expresa del titular.</p>
+  </section>
+
+  <section>
+    <h2>4. Información sobre la carta, precios y alérgenos</h2>
+    <p>La información de la carta, los menús, los precios y los horarios es orientativa y puede cambiar sin previo aviso. Los precios incluyen IVA. Si tienes alguna alergia o intolerancia alimentaria, informa siempre a nuestro personal antes de pedir.</p>
+  </section>
+
+  <section>
+    <h2>5. Enlaces a sitios de terceros</h2>
+    <p>Este sitio contiene enlaces a servicios de terceros (como Glovo, Rice, AIO, Google Maps, Instagram o TikTok). {legal.companyName} no controla ni se hace responsable de sus contenidos, políticas de privacidad o cookies, que se rigen por sus propias condiciones.</p>
+  </section>
+
+  <section>
+    <h2>6. Exclusión de responsabilidad</h2>
+    <p>{legal.companyName} no garantiza la disponibilidad continua del sitio ni la ausencia de errores, y no se responsabiliza de los daños derivados de interrupciones del servicio, fallos técnicos o del uso indebido del sitio por parte de terceros.</p>
+  </section>
+
+  <section>
+    <h2>7. Protección de datos y cookies</h2>
+    <p>El tratamiento de datos personales se describe en la <a href={withBase('politica-de-privacidad/')}>Política de privacidad</a> y el uso de cookies, en la <a href={withBase('politica-de-cookies/')}>Política de cookies</a>.</p>
+  </section>
+
+  <section>
+    <h2>8. Legislación aplicable y jurisdicción</h2>
+    <p>Este aviso legal se rige por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales que correspondan conforme a la normativa vigente, sin perjuicio del fuero que la normativa de consumidores y usuarios reconozca a los consumidores.</p>
+  </section>
+</LegalPage>

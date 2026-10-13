@@ -1,0 +1,35 @@
+---
+import brand from '../data/brand.json';
+import Layout from '../layouts/Layout.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+
+interface Props {
+  heading: string;
+  description: string;
+  path: string;
+}
+
+const { heading, description, path } = Astro.props;
+const { legal } = brand;
+
+const missing = [!legal.email && 'email de contacto', !legal.registry && 'datos del Registro Mercantil'].filter(Boolean);
+if (missing.length) console.warn(`[legal] Faltan datos obligatorios en brand.json > legal: ${missing.join(', ')}.`);
+---
+
+<Layout title={`${heading} | Pato Ramen Barcelona`} description={description} path={path} noindex>
+  <Nav sub />
+  <main id="contenido" class="bg-deep px-5 pb-24 pt-36 sm:px-8 md:pb-32 md:pt-44 lg:px-14">
+    <div class="mx-auto max-w-3xl">
+      <p class="eyebrow mb-6">Información legal</p>
+      <h1 class="font-serif text-5xl font-light leading-tight text-ink md:text-6xl">{heading}</h1>
+      <p class="mt-4 text-sm text-muted">Última actualización: {legal.updated}</p>
+      <div
+        class="mt-12 space-y-12 text-base leading-[1.8] text-muted [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-4 [&_h2]:mb-4 [&_h2]:font-serif [&_h2]:text-3xl [&_h2]:font-light [&_h2]:text-ink [&_li]:mt-2 [&_p+p]:mt-4 [&_strong]:font-medium [&_strong]:text-ink [&_ul]:list-disc [&_ul]:pl-6"
+      >
+        <slot />
+      </div>
+    </div>
+  </main>
+  <Footer sub />
+</Layout>

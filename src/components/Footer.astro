@@ -1,8 +1,15 @@
 ---
 import { ArrowUpRight } from 'lucide-react';
 import brand from '../data/brand.json';
+import { withBase } from '../lib/seo';
 
-const { footer, assets, business, nav } = brand;
+interface Props {
+  sub?: boolean;
+}
+
+const { footer, assets, business, nav, landings } = brand;
+const prefix = Astro.props.sub ? withBase('') : '';
+const href = (h: string) => (h.startsWith('#') ? prefix + h : h);
 ---
 
 <footer class="relative isolate overflow-hidden bg-deep">
@@ -34,7 +41,7 @@ const { footer, assets, business, nav } = brand;
     <span aria-hidden="true" lang="zh-Hans" class="pointer-events-none absolute -bottom-6 right-4 select-none font-cjk text-[14rem] font-light leading-none text-ink/[0.04] md:text-[22rem]">{footer.kanji}</span>
 
     <div class="relative grid gap-8 md:grid-cols-12 items-center">
-    <img src="/patoramen/logo.png" alt="Pato Ramen logo"  />
+    <img src={withBase('logo-small.webp')} alt="Logo de Pato Ramen, restaurante asiático en Barcelona" width="160" height="160" loading="lazy" decoding="async" />
       <div class="md:col-span-4">
         <p class="font-serif text-4xl font-light text-ink">{brand.brandName}</p>
         <p class="mt-4 max-w-xs text-muted">{footer.tagline}</p>
@@ -51,8 +58,15 @@ const { footer, assets, business, nav } = brand;
       }
     </div>
 
-    <nav aria-label={brand.brandName} class="relative mt-14 flex flex-wrap gap-x-8 gap-y-3 border-t border-line pt-8 text-xs uppercase tracking-[0.18em] text-muted">
-      {nav.items.map((i) => <a href={i.href} class="hover:text-primary">{i.label}</a>)}
+    <nav aria-label="Especialidades de Pato Ramen en Barcelona" class="relative mt-14 border-t border-line pt-8">
+      <h2 class="eyebrow !font-sans !text-[0.68rem] before:hidden">Descubre Pato Ramen</h2>
+      <ul class="mt-5 flex flex-wrap gap-x-8 gap-y-3 text-sm text-ink/90">
+        {landings.map((l) => <li><a href={withBase(`${l.slug}/`)} class="hover:text-primary">{l.h1Plain}</a></li>)}
+      </ul>
+    </nav>
+
+    <nav aria-label={brand.brandName} class="relative mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-line pt-8 text-xs uppercase tracking-[0.18em] text-muted">
+      {nav.items.map((i) => <a href={href(i.href)} class="hover:text-primary">{i.label}</a>)}
       <span aria-hidden="true" class="hidden flex-1 md:block"></span>
       {business.social.map((s) => <a href={s.href} target="_blank" rel="noopener noreferrer" class="hover:text-primary">{s.label}</a>)}
     </nav>
@@ -60,7 +74,7 @@ const { footer, assets, business, nav } = brand;
     <div class="relative mt-8 flex flex-col gap-4 text-xs text-muted md:flex-row md:items-center md:justify-between">
       <p>{footer.copyright}</p>
       <ul class="flex flex-wrap gap-x-6 gap-y-2">
-        {footer.links.map((l) => <li><a href={l.href} class="hover:text-primary">{l.label}</a></li>)}
+        {footer.links.map((l) => <li><a href={/^(#|https?:)/.test(l.href) ? l.href : withBase(l.href)} class="hover:text-primary">{l.label}</a></li>)}
       </ul>
       <p class="italic">{footer.credit}</p>
     </div>

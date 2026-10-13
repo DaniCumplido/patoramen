@@ -1,0 +1,71 @@
+---
+import brand from '../data/brand.json';
+import LegalPage from '../components/LegalPage.astro';
+import { withBase } from '../lib/seo';
+
+const { legal, business } = brand;
+---
+
+<LegalPage heading="Política de privacidad" description="Cómo trata Pato Ramen, restaurante asiático en Barcelona, los datos personales de sus clientes y visitantes." path="politica-de-privacidad">
+  <section>
+    <h2>1. Responsable del tratamiento</h2>
+    <ul>
+      <li><strong>Responsable:</strong> {legal.companyName} (nombre comercial {legal.tradeName})</li>
+      <li><strong>NIF:</strong> {legal.taxId}</li>
+      <li><strong>Dirección:</strong> {legal.registeredAddress}</li>
+      <li><strong>Teléfono:</strong> <a href={business.phoneHref}>{business.phone}</a></li>
+      {legal.email && <li><strong>Correo electrónico:</strong> <a href={`mailto:${legal.email}`}>{legal.email}</a></li>}
+    </ul>
+    <p>Tratamos tus datos conforme al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018 (LOPDGDD).</p>
+  </section>
+
+  <section>
+    <h2>2. Qué datos tratamos, para qué y con qué base legal</h2>
+    <p>Este sitio web <strong>no dispone de formularios de registro ni de contacto</strong> y no recoge datos personales de forma directa. Los tratamientos que se producen son los siguientes:</p>
+    <ul>
+      <li>
+        <strong>Reservas de mesa por teléfono.</strong> Si reservas llamándonos, tratamos tu nombre, teléfono, número de comensales, fecha y hora para gestionar la reserva. Base legal: aplicación de medidas precontractuales a petición tuya (art. 6.1.b RGPD).
+      </li>
+      <li>
+        <strong>Consultas y comunicaciones.</strong> Si nos contactas por teléfono, correo o redes sociales, usaremos los datos que nos facilites para atender tu consulta. Base legal: interés legítimo en responder a quien nos escribe (art. 6.1.f RGPD) o, en su caso, tu consentimiento.
+      </li>
+      <li>
+        <strong>Navegación por el sitio.</strong> Al visitar el sitio, el servidor que lo aloja puede registrar de forma técnica tu dirección IP, la fecha y hora de acceso y datos básicos del navegador, con fines de seguridad y funcionamiento. Base legal: interés legítimo (art. 6.1.f RGPD).
+      </li>
+      <li>
+        <strong>Tipografías de Google Fonts.</strong> El sitio carga sus tipografías desde los servidores de Google (Google Ireland Ltd.). Al hacerlo, Google puede recibir tu dirección IP y datos técnicos del navegador. Base legal: interés legítimo en mostrar correctamente el sitio (art. 6.1.f RGPD).
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Pedidos a domicilio</h2>
+    <p>Los pedidos a domicilio se realizan a través de plataformas de terceros (Glovo, Rice y AIO). Estas plataformas son responsables independientes del tratamiento de tus datos y se rigen por sus propias políticas de privacidad. Nosotros solo recibimos los datos necesarios para preparar y entregar tu pedido.</p>
+  </section>
+
+  <section>
+    <h2>4. Destinatarios</h2>
+    <p>No cedemos tus datos a terceros salvo obligación legal. Pueden acceder a ellos proveedores que nos prestan servicios necesarios (por ejemplo, el alojamiento del sitio web) en calidad de encargados del tratamiento, y los terceros mencionados en los apartados anteriores en los términos allí indicados.</p>
+  </section>
+
+  <section>
+    <h2>5. Plazo de conservación</h2>
+    <p>Conservamos los datos de las reservas el tiempo necesario para gestionarlas. Los datos de consultas se conservan mientras sean necesarios para atenderlas. Posteriormente, podrán mantenerse bloqueados durante los plazos legales de prescripción de posibles responsabilidades.</p>
+  </section>
+
+  <section>
+    <h2>6. Tus derechos</h2>
+    <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad dirigiéndote a {legal.companyName} {legal.email ? <>por correo electrónico a <a href={`mailto:${legal.email}`}>{legal.email}</a> o </>: ''}por escrito a {legal.registeredAddress}, indicando el derecho que deseas ejercer y acreditando tu identidad.</p>
+    <p>Si consideras que tus datos no se han tratado correctamente, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="noopener noreferrer" target="_blank">www.aepd.es</a>).</p>
+  </section>
+
+  <section>
+    <h2>7. Cookies</h2>
+    <p>Este sitio no instala cookies. Más información en la <a href={withBase('politica-de-cookies/')}>Política de cookies</a>.</p>
+  </section>
+
+  <section>
+    <h2>8. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política para adaptarla a cambios legales o del propio sitio. La fecha de la última revisión figura al inicio de esta página.</p>
+  </section>
+</LegalPage>

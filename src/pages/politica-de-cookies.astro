@@ -1,0 +1,41 @@
+---
+import brand from '../data/brand.json';
+import LegalPage from '../components/LegalPage.astro';
+import { withBase } from '../lib/seo';
+
+const { legal } = brand;
+---
+
+<LegalPage heading="Política de cookies" description="Información sobre el uso de cookies en el sitio web de Pato Ramen, restaurante asiático en Barcelona." path="politica-de-cookies">
+  <section>
+    <h2>1. ¿Qué son las cookies?</h2>
+    <p>Las cookies son pequeños archivos que un sitio web guarda en tu dispositivo al visitarlo para recordar información sobre tu navegación. Su uso está regulado por el artículo 22.2 de la Ley 34/2002 (LSSI-CE).</p>
+  </section>
+
+  <section>
+    <h2>2. Cookies que utiliza este sitio</h2>
+    <p><strong>Este sitio web no utiliza cookies propias ni de terceros</strong>, ni almacenamiento local en tu dispositivo, y no incorpora herramientas de analítica, publicidad ni seguimiento. Por ese motivo no mostramos un aviso de cookies ni te pedimos consentimiento.</p>
+  </section>
+
+  <section>
+    <h2>3. Servicios de terceros</h2>
+    <ul>
+      <li>
+        <strong>Google Fonts.</strong> Las tipografías se cargan desde servidores de Google. Este servicio no instala cookies en tu dispositivo, pero Google puede recibir tu dirección IP al servirte los archivos. Puedes ampliar la información en la <a href={withBase('politica-de-privacidad/')}>Política de privacidad</a>.
+      </li>
+      <li>
+        <strong>Enlaces externos.</strong> Al hacer clic en enlaces a Glovo, Rice, AIO, Google Maps, Instagram o TikTok abandonas este sitio. Esos servicios pueden usar sus propias cookies, que se rigen por sus políticas.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Cómo gestionar las cookies en tu navegador</h2>
+    <p>Puedes permitir, bloquear o eliminar las cookies desde la configuración de tu navegador (Chrome, Firefox, Safari, Edge, etc.). Consulta la ayuda de tu navegador para ver cómo hacerlo.</p>
+  </section>
+
+  <section>
+    <h2>5. Cambios</h2>
+    <p>Si en el futuro incorporamos cookies de analítica, publicidad o contenido de terceros, actualizaremos esta política y te pediremos consentimiento antes de instalarlas. {legal.email ? <>Para cualquier duda puedes escribirnos a <a href={`mailto:${legal.email}`}>{legal.email}</a>.</> : ''}</p>
+  </section>
+</LegalPage>

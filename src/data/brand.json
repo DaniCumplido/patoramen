@@ -54,17 +54,17 @@
     }
   },
   "assets": {
-    "heroImage": "/patoramen/ramenSignature.jpg",
-    "storyImage": "/patoramen/rest1.jpg",
+    "heroImage": "/ramenSignature.jpg",
+    "storyImage": "/rest1.jpg",
     "gallery": [
-      "/patoramen/patoSignature.jpg",
-      "/patoramen/patoHorno.jpg",
+      "/patoSignature.jpg",
+      "/patoHorno.jpg",
       "https://images.unsplash.com/photo-1601351841251-766245326eee?auto=format&fit=crop&w=2400&q=80&fm=webp",
       "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?auto=format&fit=crop&w=2400&q=80&fm=webp",
       "https://images.unsplash.com/photo-1617870314635-fc819547ec11?auto=format&fit=crop&w=2400&q=80&fm=webp",
       "https://images.unsplash.com/photo-1563245370-63ffc97abdbd?auto=format&fit=crop&w=2400&q=80&fm=webp",
-      "/patoramen/rest1.jpg",
-      "/patoramen/rest1.jpg"
+      "/rest1.jpg",
+      "/rest1.jpg"
     ],
     "galleryAlt": [
       "Pato tierno de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta, en penumbra cálida",
@@ -77,67 +77,79 @@
       "Barra nocturna con farolillos japoneses encendidos y botellas al fondo"
     ],
     "decorativeImages": {
-      "nightStreet": "https://images.unsplash.com/photo-1740834563801-48f83d978618?auto=format&fit=crop&w=2400&q=80&fm=webp",
-      "carving": "/patoramen/patoCortado.jpg",
-      "shreddedDuck": "/patoramen/cortarPato.jpg"
+      "nightStreet": "/rest4.jpg",
+      "carving": "/patoCortado.jpg",
+      "shreddedDuck": "/cortarPato.jpg"
     },
     "decorativeImagesAlt": {
-      "nightStreet": "Esquina de una calle nocturna con un local japonés iluminado y clientes esperando mesa",
-      "carving": "Cocinero con guantes azules trinchando un pato asado junto a una pared de madera clara",
-      "shreddedDuck": "Pato asado deshilachado en una fuente blanca sobre mesa de madera"
+      "nightStreet": "Interior del restaurante Pato Ramen en Barcelona con barra de madera, taburetes, mesas y farolillos de bambú",
+      "carving": "Loncha de pato asado cantonés levantada con palillos sobre una fuente blanca con salsa hoisin",
+      "shreddedDuck": "Cuchillo trinchando pato asado estilo cantonés de piel lacada y brillante"
     }
   },
   "hero": {
     "badge": "Carrer de Villarroel 255 · Barcelona",
     "title": [
       {
-        "text": "Caldo lento,",
+        "text": "Ramen casero,",
         "emphasis": false,
         "break": true
       },
       {
-        "text": "pato tierno",
+        "text": "pato cantonés",
         "emphasis": true,
         "break": true
       },
       {
-        "text": "y tiempo",
+        "text": "en Barcelona.",
         "emphasis": false,
-        "break": false
-      },
-      {
-        "text": "en el tazón.",
-        "emphasis": true,
         "break": false
       }
     ],
-    "titlePlain": "Caldo lento, pato tierno y tiempo en el tazón.",
-    "subtitle": "Doce horas de hueso y fuego bajo, un pato tierno en su punto justo de jugosidad y un espacio donde el vapor invita a tomarse la vida con calma.",
+    "titlePlain": "Ramen casero y pato cantonés en Barcelona",
+    "subtitle": "Caldos caseros de doce horas, pato asado estilo cantonés y cocina asiática de todo tipo —udon, gyozas, baos— en un local tranquilo del Eixample, con raciones generosas y precios muy ajustados.",
     "primaryCta": "Pedir ahora",
     "primaryCtaHref": "#pedir",
     "secondaryCta": "Ver la carta",
     "secondaryCtaHref": "#carta",
     "image": "https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=2400&q=80&fm=webp",
-    "imageAlt": "Cuenco negro de ramen humeante con chashu, huevo marinado, nori y espinacas sobre mesa de madera cálida",
+    "imageAlt": "Cuenco de ramen casero con fideos, gamba, huevo y verduras junto a una cesta de dumplings al vapor en Pato Ramen, Barcelona",
     "scrollHint": "Desliza",
     "kanjiVertical": "缘味"
   },
   "seo": {
-    "title": "Pato Ramen · 缘味 | Ramen y pato asado en Barcelona",
-    "description": "Ramen de caldo lento, pato tierno y dim sum al vapor en Carrer de Villarroel 255, Barcelona. Reserva tu mesa en una sala de madera, vapor y penumbra dorada.",
-    "ogImage": "https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=2400&q=80&fm=webp",
-    "ogImageAlt": "Cuenco de ramen humeante en Pato Ramen, Barcelona",
+    "title": "Pato Ramen Barcelona · Ramen casero y pato cantonés en Eixample",
+    "description": "Restaurante asiático en Barcelona (Eixample): ramen casero, pato asado cantonés, udon, gyozas y baos. Raciones grandes, menús económicos y local tranquilo.",
+    "ogImage": "/og-image.jpg",
+    "ogImageAlt": "Pato Ramen, restaurante asiático en Barcelona: ramen casero y pato asado estilo cantonés en Carrer de Villarroel 255",
+    "ogImageWidth": 1200,
+    "ogImageHeight": 630,
     "locale": "es_ES",
     "lang": "es",
-    "siteUrl": "https://danicumplido.github.io/patoramen/",
-    "siteUrlNote": "GitHub Pages URL",
+    "siteUrl": "https://duckramen.com/",
+    "productionHost": "duckramen.com",
+    "siteUrlNote": "URL de producción. La vista previa en GitHub Pages se construye con la variable SITE_URL (ver .github/workflows/deploy.yml) y se marca noindex automáticamente: solo se indexa cuando el host coincide con productionHost. Rutas de imágenes: escribir '/archivo.jpg'; el prefijo base se añade solo (también se tolera '/patoramen/archivo.jpg').",
     "themeColor": "#15100D",
+    "geo": {
+      "region": "ES-CT",
+      "placename": "Barcelona",
+      "position": "41.3920;2.1475"
+    },
     "keywords": [
+      "restaurante asiático Barcelona",
       "ramen Barcelona",
-      "pato lacado",
-      "pato tierno",
-      "dim sum Barcelona",
+      "ramen casero Barcelona",
+      "pato asado Barcelona",
+      "pato cantonés Barcelona",
+      "pato laqueado Barcelona",
+      "comida china Barcelona",
+      "comer barato Barcelona",
+      "menú barato Barcelona",
+      "udon Barcelona",
+      "gyozas Barcelona",
+      "bao Barcelona",
       "restaurante asiático Eixample",
+      "sopa de fideos Barcelona",
       "Carrer de Villarroel 255"
     ],
     "schemaType": "Restaurant",
@@ -203,6 +215,15 @@
     "mapUrl": "https://www.google.com/maps/place/Pato+Ramen+Restaurante+%E7%BC%98%E5%91%B3/@41.3919806,2.1474443,21z/data=!3m1!5s0x12a4a29d279a9d49:0xca7853ddc35d35c3!4m6!3m5!1s0x12a4a3802e04c34f:0xb2d3ae8d9387f918!8m2!3d41.3920132!4d2.1475471!16s%2Fg%2F11zddzsywb?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
     "priceRange": "€€",
     "averageTicket": "10 - 20 € por persona",
+    "alternateName": [
+      "Pato Ramen Barcelona",
+      "Pato Ramen 缘味",
+      "Pato Ramen Restaurante"
+    ],
+    "seatingCapacity": 44,
+    "orderUrls": [
+      "https://glovoapp.com/en/es/barcelona/stores/pato-ramen-barcelona"
+    ],
     "servesCuisine": [
       "Ramen",
       "Cocina cantonesa",
@@ -220,7 +241,7 @@
       ],
       "schema": [
         "Mo,Tu,We,Th,Fr,Sa,Su 12:30-16:00",
-        "Mo,Tu,We,Th,Fr,Sa,Su 19:30-23:30"
+        "Mo,Tu,We,Th,Fr,Sa,Su 19:00-23:30"
       ]
     },
     "social": [
@@ -344,8 +365,8 @@
         "description": "Asado al horno hasta lograr una carne melosa, tierna y profundamente sabrosa. Servido en su jugo de asado con el corte tradicional cantonés, perfecto para disfrutar en raciones de cuarto, medio o entero. Se trincha a la vista, con crepes finas, pepino y hoisin de la casa.",
         "price": "18,95 €",
         "priceNote": "Medio pato · Entero 34,95 €",
-        "image": "/patoramen/patoSignature.jpg",
-        "alt": "Pato asado de piel brillante y cobriza, cortado en lonchas sobre bandeja blanca con hojas de menta",
+        "image": "/patoSignature.jpg",
+        "alt": "Pato asado estilo cantonés en lonchas, de piel brillante y cobriza, sobre bandeja blanca con salsa, en Pato Ramen Barcelona",
         "tags": [
           "Especialidad de Cantón",
           "Cuarto, medio o entero",
@@ -361,8 +382,8 @@
         "description": "Preparado a fuego lento durante horas, fideos en su punto y una amplia selección de acompañamientos: desde jugoso pato o ternera hasta falda picante, costillas de cerdo, marisco o crujiente pollo rebozado.",
         "price": "9,95 €",
         "priceNote": "Precio promedio ramen",
-        "image": "/patoramen/ramenSignature.jpg",
-        "alt": "Fideos de ramen levantados con palillos sobre un cuenco con huevo marinado de yema anaranjada y caldo oscuro",
+        "image": "/ramenSignature.jpg",
+        "alt": "Ramen casero con caldo, fideos, gamba, huevo y verduras servido en cuenco de cerámica junto a una cesta de dumplings al vapor",
         "tags": [
           "Caldo casero",
           "Variedad de proteina",
@@ -379,8 +400,8 @@
         "description": "Un vistoso salteado al wok de arroz con jugosos trozos de pollo, huevo, maíz, guisantes y zanahoria, saboreado con el toque agridulce y fresco de los dados de piña. Servido directamente en media piña natural recién tallada, una combinación de texturas y colores difícil de encontrar en Barcelona.",
         "price": "12,95 €",
         "priceNote": "Cesta de 4 piezas",
-        "image": "/patoramen/arrozPinaSignature.jpg",
-        "alt": "Wok de arroz con jugosos trozos de pollo, huevo, maíz, guisantes y zanahoria, saboreado con el toque agridulce y fresco de los dados de piña.",
+        "image": "/arrozPinaSignature.jpg",
+        "alt": "Arroz frito en piña con gambas, huevo, guisantes y dados de piña, servido en media piña natural con cilantro",
         "tags": [
           "Pollo y verduras",
           "Servido en piña natural",
@@ -435,8 +456,8 @@
         "label": "conservantes o aditivos"
       }
     ],
-    "image": "/patoramen/rest2.jpg",
-    "imageAlt": "Barra de madera de un ramen-ya con cuencos apilados, frascos de condimentos y carteles manuscritos en la pared",
+    "image": "/rest2.jpg",
+    "imageAlt": "Sala tranquila de Pato Ramen en Barcelona con mesas de madera, mural oriental en tonos sepia y farolillo de bambú",
     "overlays": [
       {
         "type": "caption",
@@ -456,8 +477,8 @@
         "opacity": 0.12
       }
     ],
-    "secondaryImage": "/patoramen/patoEnHorno.jpg",
-    "secondaryImageAlt": "Cocinero entre patos asados colgados, visto a través de un cristal empañado",
+    "secondaryImage": "/patoEnHorno.jpg",
+    "secondaryImageAlt": "Dos patos asados de piel lacada colgados en el horno de Pato Ramen, listos para trinchar",
     "secondaryImageCaption": "Nuestro horno, en cocina"
   },
   "menu": {
@@ -473,7 +494,7 @@
         "emphasis": true
       }
     ],
-    "intro": "Una carta corta, escrita a mano cada semana según mercado y humor del caldo. (Platos y precios ilustrativos.)",
+    "intro": "Ramen, pato asado cantonés, udon, gyozas, baos, arroces y mucho más: cocina asiática casera, raciones generosas y precios muy ajustados.",
     "categories": [
       {
         "id": "entrantes",
@@ -1048,29 +1069,29 @@
       {
         "title": "Menú Udon",
         "description": "1 Principal, 1 entrante, 1 gyoza, 1 bebida y 1 postre.",
-        "image": "/patoramen/menuUdon.jpg",
-        "alt": "Menú Udon con fideos en caldo tradicional",
+        "image": "/menuUdon.jpg",
+        "alt": "Menú Udon de Pato Ramen: fideos udon salteados, gyozas al vapor, tempura, mochi y refresco",
         "price": "17,99 €"
       },
       {
         "title": "Menú Arroz Frito",
         "description": "1 Principal, 1 entrante, 1 bebida y 1 postre.",
-        "image": "/patoramen/menuArroz.jpg",
-        "alt": "Menú Arroz Frito en piña",
+        "image": "/menuArroz.jpg",
+        "alt": "Menú Arroz Frito de Pato Ramen: arroz frito con gambas, rollitos de primavera, mochi y refresco",
         "price": "17,50 €"
       },
       {
         "title": "Menú Tallarín",
         "description": "1 Principal, 1 entrante, 1 bebida y 1 postre.",
-        "image": "/patoramen/menuTallarin.jpg",
-        "alt": "Menú Tallarín con fideos crujientes",
+        "image": "/menuTallarin.jpg",
+        "alt": "Menú Tallarín de Pato Ramen: tallarines salteados con pollo, dumplings al vapor, mochi y refresco",
         "price": "15,50 €"
       },
       {
         "title": "Menú De Ramen",
         "description": "1 Ramen, 1 bebida y 1 postre. Nuestro ramen, de tradición china, destaca por el sabor natural de sus caldos caseros.",
-        "image": "/patoramen/menuRamen.jpg",
-        "alt": "Menú De Ramen signature con caldo tradicional",
+        "image": "/menuRamen.jpg",
+        "alt": "Menú de Ramen de Pato Ramen: sopa de fideos casera con ternera y pak choi, mochi y refresco",
         "price": "12,99 €"
       }
     ],
@@ -1170,55 +1191,403 @@
     "caption": "Una noche cualquiera en Villarroel.",
     "items": [
       {
-        "image": "/patoramen/patoSignature.jpg",
-        "alt": "Lonchas de pato asado con piel lacada brillante, reposando sobre bandeja blanca con salsa de fondo",
+        "image": "/patoSignature.jpg",
+        "alt": "Pato asado estilo cantonés en lonchas, con piel lacada brillante, sobre bandeja blanca con salsa, en Pato Ramen Barcelona",
         "caption": "La gloria en lonchas",
         "span": "wide"
       },
       {
-        "image": "/patoramen/ramen.jpg",
-        "alt": "Caldo profundo con fideos sedosos, carne deshilachada, huevo marinado de yema líquida y verduras verdes",
+        "image": "/ramen.jpg",
+        "alt": "Ramen casero con caldo, fideos, láminas de ternera, huevo y pak choi en cuenco de cerámica",
         "caption": "Caldo que abraza",
         "span": "tall"
       },
       {
-        "image": "/patoramen/rest2.jpg",
-        "alt": "Barra del restaurante con arte oriental en las paredes, farolillos dorados y mesas de madera bajo luz cálida",
+        "image": "/rest2.jpg",
+        "alt": "Sala tranquila del restaurante asiático Pato Ramen en Barcelona con mural oriental, sillas de madera y farolillo de bambú",
         "caption": "La sala en calma",
         "span": "wide"
       },
       {
-        "image": "/patoramen/mesa.jpg",
-        "alt": "Conjunto de platos: pato crujiente en lonchas, carne en guiso perfumado, dumplings blancos y arroz sobre madera natural",
+        "image": "/mesa.jpg",
+        "alt": "Mesa con raciones generosas: ternera salteada con verduras, gyozas, arroz blanco y pollo rebozado con palillos",
         "caption": "Cada plato, una voz",
         "span": "tall"
       },
       {
-        "image": "/patoramen/rest1.jpg",
-        "alt": "Barra íntima con sillas cálidas, pared de arte oriental en sepia, farolillos dorados proyectando sombra suave",
+        "image": "/rest1.jpg",
+        "alt": "Barra con taburetes, mural oriental y farolillos dorados en el comedor de Pato Ramen, Carrer de Villarroel, Barcelona",
         "caption": "Luz dorada, calor vivo",
         "span": "square"
       },
       {
-        "image": "/patoramen/arrozPinaSignature.jpg",
-        "alt": "Arroz frito dorado con maíz, guisantes y hierbas frescas servido dentro de piña tallada y humeante",
+        "image": "/arrozPinaSignature.jpg",
+        "alt": "Arroz frito en piña con gambas, huevo y guisantes, servido en media piña natural",
         "caption": "Arroz rebosante",
         "span": "square"
       },
       {
-        "image": "/patoramen/conejos.jpg",
-        "alt": "Bao al vapor dentro de cestilla de bambú, blancos como la nieve, con salsa oscura al lado esperando",
+        "image": "/conejos.jpg",
+        "alt": "Baos al vapor con forma de conejo en cesta de bambú junto a un cuenco de salsa picante",
         "caption": "Pan nube al vapor",
         "span": "tall"
       },
       {
-        "image": "/patoramen/ramen2.jpg",
-        "alt": "Fideos caseros levantados con palillos sobre caldo profundo, carne guisada de ámbar suave y tofu sedoso blanco",
+        "image": "/ramen2.jpg",
+        "alt": "Sopa de fideos casera con costilla de cerdo, tofu y pak choi; fideos levantados con palillos sobre el caldo",
         "caption": "El instante perfecto",
         "span": "wide"
       }
     ]
   },
+  "legal": {
+    "_note": "Datos para Aviso legal y Política de privacidad (LSSI art. 10 / RGPD). NIF y razón social tomados de la web actual de duckramen.com. PENDIENTE de confirmar con el titular: email de contacto, domicilio social y datos del Registro Mercantil. Las líneas vacías no se muestran y el build avisa por consola.",
+    "companyName": "XIAOZHUPAI S.L.",
+    "tradeName": "Pato Ramen · 缘味",
+    "taxId": "B88671607",
+    "activity": "Restauración (CNAE 5611, Restaurantes)",
+    "registeredAddress": "Carrer de Villarroel, 255, 08036 Barcelona",
+    "email": "",
+    "registry": "",
+    "domain": "duckramen.com",
+    "updated": "13 de octubre de 2026"
+  },
+  "why": {
+    "eyebrow": "Por qué Pato Ramen",
+    "title": [
+      { "text": "Comer bien en Barcelona,", "emphasis": false },
+      { "text": "sin complicarte", "emphasis": true }
+    ],
+    "intro": "Un restaurante asiático en el Eixample pensado para comer a gusto: caldos caseros, pato asado cantonés, raciones generosas y precios que invitan a repetir.",
+    "items": [
+      {
+        "kanji": "实惠",
+        "title": "Precios económicos",
+        "text": "Sopas de fideos desde 7,95 €, gyozas desde 4,50 € y menús completos desde 12,99 €. Comer rico en Barcelona no tiene por qué ser caro."
+      },
+      {
+        "kanji": "大份",
+        "title": "Raciones grandes",
+        "text": "Cuencos y platos generosos, pensados para salir satisfecho. Aquí nadie se queda con hambre."
+      },
+      {
+        "kanji": "高汤",
+        "title": "Caldos caseros de 12 horas",
+        "text": "Cada mañana cocinamos el caldo desde cero con huesos frescos y verduras, sin aditivos ni conservantes."
+      },
+      {
+        "kanji": "多样",
+        "title": "Cocina asiática de todo tipo",
+        "text": "Ramen, udon, gyozas, baos, shaomai, takoyaki, arroces, tallarines y pato asado. Y bebidas chinas poco habituales además de las de siempre."
+      },
+      {
+        "kanji": "安静",
+        "title": "Un sitio tranquilo",
+        "text": "Una sala de 44 plazas con madera y luz cálida, ideal para comer con calma en pareja, en familia o con amigos."
+      },
+      {
+        "kanji": "交通",
+        "title": "Fácil llegar en transporte público",
+        "text": "Estamos en pleno Eixample (Carrer de Villarroel, 255), una zona muy bien conectada en metro y autobús. No hace falta coche."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": [
+      { "text": "Todo lo que quieres saber", "emphasis": false },
+      { "text": "antes de venir", "emphasis": true }
+    ],
+    "items": [
+      {
+        "q": "¿Dónde puedo comer ramen casero en Barcelona?",
+        "a": "En Pato Ramen, en Carrer de Villarroel 255 (Eixample, 08036 Barcelona). Preparamos nuestros caldos cada mañana desde cero durante doce horas, con ingredientes naturales y sin conservantes. Las sopas de fideos y el ramen van desde 7,95 €."
+      },
+      {
+        "q": "¿Qué diferencia hay entre vuestro ramen y el ramen japonés?",
+        "a": "Nuestro origen no está en la tradición japonesa sino en las sopas de fideos chinas (汤面): un caldo espeso, puro y reconfortante, con fideos en su punto y una amplia selección de toppings como ternera, falda picante, costillas de cerdo, marisco, pollo rebozado o pato."
+      },
+      {
+        "q": "¿Dónde comer pato asado o pato laqueado en Barcelona?",
+        "a": "El pato estilo cantonés es nuestra especialidad. Se asa al horno hasta lograr una carne melosa y tierna, se trincha a la vista y se sirve con crepes finas, pepino y hoisin de la casa. Lo tienes en ración de cuarto (9,95 €), medio (18,95 €) o entero (34,95 €)."
+      },
+      {
+        "q": "¿Es un restaurante barato?",
+        "a": "Sí. Las sopas de fideos y los arroces empiezan en 7,95 €, las gyozas en 4,50 € y los menús completos (con principal, bebida y postre) en 12,99 €. El ticket medio es de 10 a 20 € por persona."
+      },
+      {
+        "q": "¿Las raciones son grandes?",
+        "a": "Sí, trabajamos con cantidades generosas. Es habitual salir satisfecho con un solo plato principal o con uno de nuestros menús."
+      },
+      {
+        "q": "¿Cómo llegar a Pato Ramen en transporte público?",
+        "a": "Estamos en pleno Eixample, en Carrer de Villarroel 255, una zona muy bien comunicada en metro y autobús, por lo que es fácil llegar sin coche. Puedes consultar la mejor ruta desde tu ubicación en Google Maps."
+      },
+      {
+        "q": "¿Qué otros platos de comida asiática tenéis?",
+        "a": "Además del ramen y el pato: udon, tallarines y fideos de arroz salteados, arroces (incluido el arroz en piña), gyozas, baos, shaomai, takoyaki, tempura, rollitos y platos con salsa de ostras, curry o agridulce. También tenemos bebidas chinas poco habituales, además de las bebidas de siempre."
+      },
+      {
+        "q": "¿Cuál es el horario de Pato Ramen?",
+        "a": "Abrimos todos los días de la semana, de lunes a domingo, de 12:30 a 16:00 y de 19:00 a 23:30."
+      },
+      {
+        "q": "¿Hay que reservar mesa?",
+        "a": "Nuestra sala tiene 44 plazas. Para asegurar tu mesa puedes llamarnos al +34 603 72 82 24 y te atendemos al momento."
+      },
+      {
+        "q": "¿Puedo pedir a domicilio o para llevar?",
+        "a": "Sí. Puedes pedir a domicilio a través de Glovo, Rice y AIO y recibir un tazón humeante en la puerta de tu casa."
+      }
+    ]
+  },
+  "landings": [
+    {
+      "slug": "ramen-barcelona",
+      "navLabel": "Ramen",
+      "title": "Ramen casero en Barcelona · Sopas de fideos chinas | Pato Ramen",
+      "description": "Sopas de fideos con caldo casero de 12 horas en el Eixample de Barcelona. Ramen de ternera, pollo rebozado, costillas, marisco o pato desde 7,95 €.",
+      "eyebrow": "Sopas de fideos",
+      "h1": [
+        { "text": "Ramen casero", "emphasis": true },
+        { "text": "en Barcelona", "emphasis": false }
+      ],
+      "h1Plain": "Ramen casero en Barcelona",
+      "lead": "Caldos de doce horas, fideos en su punto y una amplia selección de toppings: la sopa de fideos china de siempre, en pleno Eixample.",
+      "image": "/ramenSignature.jpg",
+      "imageAlt": "Ramen casero con caldo, fideos, gamba, huevo y verduras servido en cuenco de cerámica junto a una cesta de dumplings al vapor",
+      "sections": [
+        {
+          "h2": "Un ramen distinto: sopa de fideos china",
+          "paragraphs": [
+            "A diferencia de la mayoría de opciones en Barcelona, nuestro origen no está en la tradición japonesa, sino en las recetas ancestrales de las sopas de fideos chinas (汤面). El secreto reside en el respeto absoluto al proceso original.",
+            "Cada mañana preparamos nuestros caldos desde cero, de forma 100% casera y con ingredientes naturales: huesos frescos, verduras seleccionadas y fuego lento durante doce horas. Sin aditivos, sin atajos y sin conservantes.",
+            "El resultado es un fondo espeso, puro y profundamente reconfortante, ideal para los días de frío y para cualquier día en que apetezca un tazón de verdad."
+          ]
+        },
+        {
+          "h2": "Elige tu ramen: toppings para todos los gustos",
+          "paragraphs": [
+            "Puedes pedir tu sopa de fideos con jugosa ternera, falda de ternera picante, costillas de cerdo, pollo rebozado crujiente, gambas rebozadas, marisco o nuestro pato estilo cantonés. También tenemos una opción con carne picada y encurtidos."
+          ]
+        },
+        {
+          "h2": "Ramen en menú completo",
+          "paragraphs": [
+            "Si quieres comer a un precio aún más contenido, el Menú de Ramen incluye un ramen, una bebida y un postre por 12,99 €."
+          ]
+        }
+      ],
+      "menuCategories": ["ramen"],
+      "menuHeading": "Nuestras sopas de fideos y ramen",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta el ramen en Pato Ramen?",
+          "a": "Nuestras sopas de fideos y ramen van desde 7,95 € hasta 12,95 €, según el topping. El Menú de Ramen (ramen, bebida y postre) cuesta 12,99 €."
+        },
+        {
+          "q": "¿Vuestro ramen es japonés?",
+          "a": "No: es sopa de fideos china (汤面), con un caldo casero cocinado durante doce horas. Es una propuesta distinta a la del ramen japonés habitual en Barcelona."
+        },
+        {
+          "q": "¿Tenéis ramen picante?",
+          "a": "Sí, la sopa de fideos picante con falda de ternera (9,95 €)."
+        },
+        {
+          "q": "¿Puedo pedir el ramen a domicilio?",
+          "a": "Sí, puedes pedirlo a domicilio con Glovo, Rice o AIO, o venir a comerlo a nuestro local de Carrer de Villarroel 255."
+        }
+      ],
+      "related": ["pato-asado-barcelona", "menus-baratos-barcelona", "comida-asiatica-barcelona"]
+    },
+    {
+      "slug": "pato-asado-barcelona",
+      "navLabel": "Pato asado",
+      "title": "Pato asado cantonés en Barcelona · Pato laqueado | Pato Ramen",
+      "description": "Pato asado estilo cantonés en el Eixample de Barcelona: cuarto 9,95 €, medio 18,95 € o entero 34,95 €. Trinchado a la vista, con crepes, pepino y hoisin.",
+      "eyebrow": "Especialidad de la casa",
+      "h1": [
+        { "text": "Pato asado cantonés", "emphasis": true },
+        { "text": "en Barcelona", "emphasis": false }
+      ],
+      "h1Plain": "Pato asado cantonés en Barcelona",
+      "lead": "Asado al horno hasta lograr una carne melosa, tierna y profundamente sabrosa, con la piel brillante y lacada del pato cantonés tradicional.",
+      "image": "/patoSignature.jpg",
+      "imageAlt": "Pato asado estilo cantonés en lonchas, de piel brillante y cobriza, sobre bandeja blanca con salsa, en Pato Ramen Barcelona",
+      "sections": [
+        {
+          "h2": "Cómo servimos nuestro pato cantonés",
+          "paragraphs": [
+            "Se trincha a la vista y se sirve en su jugo de asado con el corte tradicional cantonés. Lo acompañamos con crepes finas, pepino y hoisin de la casa, para que montes tus propios bocados en la mesa."
+          ]
+        },
+        {
+          "h2": "Cuarto, medio o entero: elige según tu mesa",
+          "paragraphs": [
+            "Lo preparamos en tres tamaños para que puedas disfrutarlo solo, en pareja o en grupo: la ración de cuarto es individual, el medio pato es para dos personas y el pato entero da para tres o cuatro."
+          ]
+        },
+        {
+          "h2": "¿Buscas pato laqueado o pato asado chino en Barcelona?",
+          "paragraphs": [
+            "El pato estilo cantonés es nuestra especialidad: lo que muchos buscan como pato laqueado o pato asado al estilo chino. Piel brillante, carne tierna y un asado paciente que respeta la tradición de Cantón."
+          ]
+        },
+        {
+          "h2": "Más formas de probar el pato",
+          "paragraphs": [
+            "Si prefieres algo más ligero o quieres probarlo de otra manera, también tenemos arroz frito con pato (8,95 €) y sopa de fideos con pato estilo cantonés (12,95 €)."
+          ]
+        }
+      ],
+      "menuCategories": ["pato"],
+      "menuHeading": "Pato estilo cantonés: raciones y precios",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta el pato asado?",
+          "a": "El cuarto de pato cuesta 9,95 €, el medio pato 18,95 € y el pato entero 34,95 €."
+        },
+        {
+          "q": "¿Para cuántas personas es cada ración?",
+          "a": "El cuarto es una ración individual, el medio pato es para 2 personas y el pato entero para 3-4 personas."
+        },
+        {
+          "q": "¿Es pato pekín?",
+          "a": "Es pato asado estilo cantonés: se asa al horno, se trincha a la vista y se sirve en su jugo con crepes finas, pepino y hoisin de la casa."
+        },
+        {
+          "q": "¿Puedo reservar mesa para comer pato?",
+          "a": "Sí, llámanos al +34 603 72 82 24 y te reservamos mesa. Abrimos todos los días de 12:30 a 16:00 y de 19:00 a 23:30."
+        }
+      ],
+      "related": ["ramen-barcelona", "menus-baratos-barcelona", "comida-asiatica-barcelona"]
+    },
+    {
+      "slug": "menus-baratos-barcelona",
+      "navLabel": "Menús",
+      "title": "Menú barato en Barcelona · Comer bien por poco | Pato Ramen",
+      "description": "Menús completos desde 12,99 € en el Eixample de Barcelona: principal, bebida y postre. Raciones grandes, cocina asiática casera y local tranquilo.",
+      "eyebrow": "Menús y precios",
+      "h1": [
+        { "text": "Comer barato", "emphasis": true },
+        { "text": "en Barcelona", "emphasis": false }
+      ],
+      "h1Plain": "Comer barato en Barcelona: menús asiáticos desde 12,99 €",
+      "lead": "Menús completos, raciones grandes y cocina asiática casera a precios muy ajustados, en un local tranquilo del Eixample.",
+      "image": "/mesa.jpg",
+      "imageAlt": "Mesa con raciones generosas: ternera salteada con verduras, gyozas, arroz blanco y pollo rebozado con palillos",
+      "sections": [
+        {
+          "h2": "Menús completos con bebida y postre",
+          "paragraphs": [
+            "Nuestros menús incluyen plato principal, bebida y postre, y algunos también entrante. Son la forma más fácil de comer bien en Barcelona sin gastar de más."
+          ]
+        },
+        {
+          "h2": "Precios que invitan a repetir",
+          "paragraphs": [
+            "No hace falta pedir un menú para comer barato: las sopas de fideos y los arroces empiezan en 7,95 €, las gyozas en 4,50 € y el pato estilo cantonés en ración individual cuesta 9,95 €. El ticket medio es de 10 a 20 € por persona."
+          ]
+        },
+        {
+          "h2": "Raciones grandes",
+          "paragraphs": [
+            "Aquí las cantidades son generosas. Es habitual salir satisfecho con un solo plato principal, así que el precio rinde todavía más."
+          ]
+        },
+        {
+          "h2": "Un sitio tranquilo para comer sin prisas",
+          "paragraphs": [
+            "Nuestra sala tiene 44 plazas, con madera y luz cálida. Es un ambiente calmado, perfecto para comer en pareja, en familia o con amigos, y fácil de alcanzar en transporte público desde cualquier punto de Barcelona."
+          ]
+        }
+      ],
+      "showHighlights": true,
+      "menuCategories": [],
+      "menuHeading": "",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta un menú en Pato Ramen?",
+          "a": "Nuestros menús van desde 12,99 € (Menú de Ramen) hasta 17,99 € (Menú Udon). El Menú Arroz Frito cuesta 17,50 € y el Menú Tallarín 15,50 €."
+        },
+        {
+          "q": "¿Qué incluye cada menú?",
+          "a": "El Menú de Ramen incluye 1 ramen, 1 bebida y 1 postre. Los menús de Arroz Frito y Tallarín incluyen 1 principal, 1 entrante, 1 bebida y 1 postre; el Menú Udon, además, 1 gyoza."
+        },
+        {
+          "q": "¿Cuál es el precio medio por persona?",
+          "a": "Entre 10 y 20 € por persona, según lo que pidas."
+        },
+        {
+          "q": "¿Dónde está el restaurante?",
+          "a": "En Carrer de Villarroel 255, en pleno Eixample (08036 Barcelona), una zona bien conectada en metro y autobús."
+        }
+      ],
+      "related": ["ramen-barcelona", "pato-asado-barcelona", "comida-asiatica-barcelona"]
+    },
+    {
+      "slug": "comida-asiatica-barcelona",
+      "navLabel": "Comida asiática",
+      "title": "Comida asiática en Barcelona · Udon, gyozas y baos | Pato Ramen",
+      "description": "Udon, gyozas, baos, shaomai, takoyaki, arroces, tallarines y pato asado en el Eixample de Barcelona. Cocina asiática variada, bebidas chinas y precios bajos.",
+      "eyebrow": "Cocina asiática variada",
+      "h1": [
+        { "text": "Comida asiática", "emphasis": true },
+        { "text": "en Barcelona", "emphasis": false }
+      ],
+      "h1Plain": "Comida asiática en Barcelona: udon, gyozas, baos y más",
+      "lead": "Además de nuestro ramen y nuestro pato, una carta amplia de cocina asiática: udon, gyozas, baos, shaomai, takoyaki, arroces, tallarines y platos con salsa.",
+      "image": "/gyozasMarisco.jpg",
+      "imageAlt": "Gyozas de marisco doradas a la plancha servidas sobre un plato de cerámica",
+      "sections": [
+        {
+          "h2": "Dim sum, gyozas y baos",
+          "paragraphs": [
+            "Para empezar o para compartir: gyozas de pollo, cerdo, marisco o verduras, baos de cerdo asado, shaomai de cerdo, empanadillas de gambas y panecillos de conejo con crema, todo al vapor o a la plancha."
+          ]
+        },
+        {
+          "h2": "Udon, tallarines y arroces",
+          "paragraphs": [
+            "Udon salteado con pollo, ternera o gambas, tallarines y fideos de arroz salteados, y arroces fritos de ternera, gambas, pato o pollo. Sin olvidar nuestro arroz en piña, servido en media piña natural."
+          ]
+        },
+        {
+          "h2": "Frituras y platos con salsa",
+          "paragraphs": [
+            "Takoyaki, tempura, rollitos de primavera, samosas de curry, pollo crujiente, gambas con sal y pimienta, además de pollo y ternera con salsa de ostras, pollo al curry o agridulce."
+          ]
+        },
+        {
+          "h2": "Bebidas chinas y de siempre",
+          "paragraphs": [
+            "Además de los refrescos y las bebidas habituales, tenemos bebidas chinas poco comunes en Barcelona. Pregunta por ellas en sala: son un buen complemento para descubrir otros sabores."
+          ]
+        }
+      ],
+      "menuCategories": ["plato-principal", "udon", "fideos", "arroces", "asiatica"],
+      "menuHeading": "Platos de nuestra carta asiática",
+      "faq": [
+        {
+          "q": "¿Qué tipo de comida asiática tenéis?",
+          "a": "Cocina china y asiática variada: ramen y sopas de fideos, pato asado estilo cantonés, udon, tallarines, arroces, gyozas, baos, shaomai, takoyaki, tempura, rollitos y platos con salsa."
+        },
+        {
+          "q": "¿Tenéis bebidas chinas?",
+          "a": "Sí, además de las bebidas de siempre ofrecemos bebidas chinas poco habituales. Pregunta en sala por las que tenemos disponibles."
+        },
+        {
+          "q": "¿Hay opciones con verduras?",
+          "a": "Sí: edamame, ensalada de pepino, ensalada de algas wakame, gyozas de verduras, tempura de verduras o moniato frito, entre otras. Informa siempre a tu camarero de cualquier alergia o intolerancia."
+        },
+        {
+          "q": "¿Se puede pedir a domicilio?",
+          "a": "Sí, con Glovo, Rice y AIO. También puedes venir a comer a nuestro local de Carrer de Villarroel 255."
+        }
+      ],
+      "related": ["ramen-barcelona", "pato-asado-barcelona", "menus-baratos-barcelona"]
+    }
+  ],
   "order": {
     "id": "pedir",
     "eyebrow": "Pedidos y reservas",
@@ -1238,8 +1607,8 @@
       }
     ],
     "copy": "Nuestra cocina está lista tanto si prefieres acompañarnos en el local como si deseas recibir un tazón humeante en la puerta de tu hogar.",
-    "image": "/patoramen/rest3.jpg",
-    "imageAlt": "Barra de izakaya con farolillos de papel rojos",
+    "image": "/rest3.jpg",
+    "imageAlt": "Interior de Pato Ramen en Barcelona: mesas de madera, barra con taburetes y farolillos de bambú",
     "platforms": [
       {
         "name": "Glovo",
@@ -1292,15 +1661,15 @@
     "links": [
       {
         "label": "Aviso legal",
-        "href": "#"
+        "href": "aviso-legal/"
       },
       {
         "label": "Política de privacidad",
-        "href": "#"
+        "href": "politica-de-privacidad/"
       },
       {
         "label": "Cookies",
-        "href": "#"
+        "href": "politica-de-cookies/"
       }
     ],
     "copyright": "© 2026 Pato Ramen · 缘味. Todos los derechos reservados.",

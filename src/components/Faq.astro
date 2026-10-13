@@ -1,0 +1,49 @@
+---
+import brand from '../data/brand.json';
+import Title from './Title.astro';
+
+interface Props {
+  items?: { q: string; a: string }[];
+  heading?: boolean;
+  id?: string;
+  openFirst?: boolean;
+}
+
+const { faq } = brand;
+const { items = faq.items, heading = true, id = 'preguntas', openFirst = true } = Astro.props;
+---
+
+<section id={id} class="section-pad relative overflow-x-clip bg-surface">
+  <div class="container-x relative z-10">
+    <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+      {
+        heading && (
+          <header class="lg:col-span-4">
+            <p class="eyebrow mb-6" data-fade>{faq.eyebrow}</p>
+            <Title segments={faq.title} />
+          </header>
+        )
+      }
+      <div class:list={[heading ? 'lg:col-span-8' : 'lg:col-span-12']}>
+        <div class="divide-y divide-line/70 border-y border-line/70">
+          {
+            items.map((item, i) => (
+              <details class="group py-6" open={openFirst && i === 0}>
+                <summary class="flex cursor-pointer list-none items-start justify-between gap-6 [&::-webkit-details-marker]:hidden">
+                  <h3 class="font-serif text-2xl font-light leading-snug text-ink md:text-[1.9rem]">{item.q}</h3>
+                  <span
+                    aria-hidden="true"
+                    class="mt-1.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/50 text-xl leading-none text-primary transition-transform duration-300 group-open:rotate-45"
+                  >
+                    +
+                  </span>
+                </summary>
+                <p class="mt-4 max-w-3xl text-base leading-relaxed text-muted md:text-lg">{item.a}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,221 @@
+---
+import { ArrowUpRight, Clock, MapPin, Phone } from 'lucide-react';
+import brand from '../data/brand.json';
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Title from '../components/Title.astro';
+import Faq from '../components/Faq.astro';
+import { withBase } from '../lib/seo';
+
+export function getStaticPaths() {
+  return brand.landings.map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const { business, menu, nav } = brand;
+const categories = page.menuCategories.map((id) => menu.categories.find((c) => c.id === id)).filter((c) => c !== undefined);
+const related = page.related.map((slug) => brand.landings.find((l) => l.slug === slug)).filter((l) => l !== undefined);
+const sectionNumber = (i: number) => String(i + 1).padStart(2, '0');
+---
+
+<Layout
+  title={page.title}
+  description={page.description}
+  path={page.slug}
+  faq={page.faq}
+  breadcrumb={[
+    { name: 'Inicio', path: '' },
+    { name: page.h1Plain, path: page.slug },
+  ]}
+>
+  <Nav sub />
+  <main id="contenido">
+    <section class="relative isolate overflow-hidden bg-deep px-5 pb-20 pt-32 sm:px-8 md:pb-28 md:pt-44 lg:px-14">
+      <div class="container-x grid gap-14 lg:grid-cols-12 lg:items-center">
+        <div class="lg:col-span-7">
+          <nav aria-label="Migas de pan" class="mb-8 text-[0.7rem] uppercase tracking-[0.22em] text-muted">
+            <ol class="flex flex-wrap items-center gap-2">
+              <li><a href={withBase('')} class="hover:text-primary">Inicio</a></li>
+              <li aria-hidden="true">/</li>
+              <li class="text-ink" aria-current="page">{page.eyebrow}</li>
+            </ol>
+          </nav>
+          <p class="eyebrow mb-6">{page.eyebrow}</p>
+          <Title segments={page.h1} tag="h1" lines={false} />
+          <p class="mt-8 max-w-xl text-lg leading-relaxed text-ink/90 md:text-xl">{page.lead}</p>
+          <div class="mt-10 flex flex-wrap gap-3">
+            <a href={nav.cta.href} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <span>{nav.cta.label}</span>
+              <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+            <a href={business.phoneHref} class="btn btn-ghost">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              <span>Reservar mesa</span>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="relative aspect-[4/5] overflow-hidden rounded-[2px] border border-line/70">
+            <img
+              src={page.image}
+              alt={page.imageAlt}
+              width="1200"
+              height="1500"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+              class="h-full w-full object-cover"
+            />
+            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad bg-background">
+      <div class="container-x">
+        <div class="mx-auto max-w-3xl space-y-16 md:space-y-24">
+          {
+            page.sections.map((s, i) => (
+              <div>
+                <p class="eyebrow mb-5 !text-primary">{sectionNumber(i)}</p>
+                <h2 class="font-serif text-4xl font-light leading-[1.08] text-ink md:text-5xl">{s.h2}</h2>
+                <div class="mt-6 space-y-5 text-base leading-[1.8] text-muted md:text-lg">
+                  {s.paragraphs.map((p) => <p>{p}</p>)}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    {
+      categories.length > 0 && (
+        <section class="section-pad bg-surface">
+          <div class="container-x">
+            <h2 class="max-w-3xl font-serif text-4xl font-light leading-[1.08] text-ink md:text-5xl">{page.menuHeading}</h2>
+            <div class="mt-12 grid gap-x-16 gap-y-12 md:grid-cols-2">
+              {categories.map((c) => (
+                <section>
+                  <h3 class="font-serif text-3xl font-medium text-primary">{c.name}</h3>
+                  <ul class="mt-5 space-y-3 text-base">
+                    {c.items.map((i) => (
+                      <li>
+                        <div class="flex items-baseline gap-3">
+                          <span class="text-ink">
+                            {i.name}
+                            {i.note && <span class="text-muted"> · {i.note}</span>}
+                          </span>
+                          <span aria-hidden="true" class="h-px flex-1 border-b border-dotted border-secondary/40" />
+                          <span class="font-serif text-xl text-primary">{i.price}</span>
+                        </div>
+                        {i.description && <p class="mt-1 text-sm text-muted">{i.description}</p>}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ))}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      page.showHighlights && (
+        <section class="section-pad bg-surface">
+          <div class="container-x">
+            <h2 class="max-w-3xl font-serif text-4xl font-light leading-[1.08] text-ink md:text-5xl">Nuestros menús y sus precios</h2>
+            <ul class="mt-12 grid gap-6 md:grid-cols-2">
+              {menu.highlights.map((h) => (
+                <li class="flex gap-5 rounded-sm border border-line bg-background/60 p-5">
+                  <img src={h.image} alt={h.alt} width="160" height="160" loading="lazy" decoding="async" class="h-28 w-28 shrink-0 rounded-sm object-cover md:h-36 md:w-36" />
+                  <div>
+                    <h3 class="font-serif text-2xl font-medium leading-tight text-ink md:text-3xl">{h.title}</h3>
+                    <p class="mt-1 font-serif text-2xl text-primary">{h.price}</p>
+                    <p class="mt-2 text-sm leading-relaxed text-muted">{h.description}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )
+    }
+
+    <Faq items={page.faq} id="preguntas" openFirst />
+
+    <section class="section-pad bg-deep">
+      <div class="container-x grid gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-6">
+          <p class="eyebrow mb-6">Dónde estamos</p>
+          <h2 class="font-serif text-4xl font-light leading-[1.08] text-ink md:text-5xl">
+            Pato Ramen, en pleno <span class="gold-text">Eixample</span>
+          </h2>
+          <address class="mt-8 not-italic">
+            <ul class="space-y-6 text-base">
+              <li class="flex gap-4">
+                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                <div>
+                  <p class="text-ink">{business.address.display}</p>
+                  <a href={business.mapUrl} target="_blank" rel="noopener noreferrer" class="mt-1 inline-flex items-center gap-1.5 text-primary underline-offset-4 hover:underline">
+                    Cómo llegar en Google Maps
+                    <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  </a>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                <div>
+                  {business.openingHours.display.map((h) => (
+                    <p class="text-ink">
+                      {h.days}: <span class="text-muted">{h.hours}</span>
+                    </p>
+                  ))}
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <Phone className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                <a href={business.phoneHref} class="text-ink hover:text-primary">{business.phone}</a>
+              </li>
+            </ul>
+          </address>
+          <p class="mt-8 max-w-md text-sm leading-relaxed text-muted">
+            Zona del Eixample muy bien comunicada en metro y autobús, con fácil acceso desde cualquier punto de Barcelona sin necesidad de coche.
+          </p>
+        </div>
+
+        <div class="lg:col-span-6">
+          <p class="eyebrow mb-6">Sigue descubriendo</p>
+          <ul class="space-y-3">
+            {
+              related.map((r) => (
+                <li>
+                  <a
+                    href={withBase(`${r.slug}/`)}
+                    class="group flex items-center justify-between gap-4 rounded-sm border border-line bg-surface/80 p-5 transition-colors hover:border-primary"
+                  >
+                    <span class="font-serif text-2xl font-light text-ink group-hover:text-primary">{r.h1Plain}</span>
+                    <ArrowUpRight className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                  </a>
+                </li>
+              ))
+            }
+            <li>
+              <a
+                href={withBase('#carta')}
+                class="group flex items-center justify-between gap-4 rounded-sm border border-line bg-surface/80 p-5 transition-colors hover:border-primary"
+              >
+                <span class="font-serif text-2xl font-light text-ink group-hover:text-primary">Ver la carta completa</span>
+                <ArrowUpRight className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer sub />
+</Layout>
