@@ -1094,16 +1094,16 @@
     ],
     "press": [
       {
-        "quote": "Un caldo que sabe a tiempo bien empleado. El mejor ramen del Eixample.",
-        "outlet": "Gaceta Gastronómica",
-        "author": "Redacción",
-        "_placeholder": true
+        "quote": "This is a lovely place,it’s cheap and tasty the staff is lovely too highly recommend when you visit Barcelona!!",
+        "outlet": "Reseñas",
+        "author": "Alyara",
+        "_placeholder": false
       },
       {
-        "quote": "El pato tierno más honesto de la ciudad: piel que suena, carne que se deshace.",
-        "outlet": "Revista Mesa y Brasa",
-        "author": "Sección Mesas",
-        "_placeholder": true
+        "quote": "Vine con mi esposa de aniversario y acertamos con el lugar. INCREÍBLE. Comida deliciosa, muy casero y muy tranquilo el lugar.",
+        "outlet": "Reseñas",
+        "author": "Hector",
+        "_placeholder": false
       },
       {
         "quote": "Es un buen lugar para ir en grupo o en familia. El servicio es rápido y el personal te explica el menú si lo necesitas.",
@@ -1171,50 +1171,50 @@
     "items": [
       {
         "image": "/patoramen/patoSignature.jpg",
-        "alt": "Pato tierno de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta",
-        "caption": "Piel, laca, fuego",
+        "alt": "Lonchas de pato asado con piel lacada brillante, reposando sobre bandeja blanca con salsa de fondo",
+        "caption": "La gloria en lonchas",
         "span": "wide"
       },
       {
         "image": "/patoramen/ramen.jpg",
-        "alt": "Patos y carnes lacadas colgando tras un cristal empañado, iluminados por focos cálidos",
-        "caption": "Colgados a la espera",
+        "alt": "Caldo profundo con fideos sedosos, carne deshilachada, huevo marinado de yema líquida y verduras verdes",
+        "caption": "Caldo que abraza",
         "span": "tall"
       },
       {
         "image": "/patoramen/rest2.jpg",
-        "alt": "Barra de izakaya con farolillos de papel rojos y cocineros trabajando bajo luz ámbar",
-        "caption": "La barra, a plena marcha",
+        "alt": "Barra del restaurante con arte oriental en las paredes, farolillos dorados y mesas de madera bajo luz cálida",
+        "caption": "La sala en calma",
         "span": "wide"
       },
       {
         "image": "/patoramen/mesa.jpg",
-        "alt": "Vapor ascendiendo de una cesta de bambú con dumplings junto a un cuenco de salsa",
-        "caption": "Vapor a contraluz",
+        "alt": "Conjunto de platos: pato crujiente en lonchas, carne en guiso perfumado, dumplings blancos y arroz sobre madera natural",
+        "caption": "Cada plato, una voz",
         "span": "tall"
       },
       {
         "image": "/patoramen/rest1.jpg",
-        "alt": "Callejón nocturno con farolillos rojos y rótulos iluminados",
-        "caption": "Después de la última ronda",
+        "alt": "Barra íntima con sillas cálidas, pared de arte oriental en sepia, farolillos dorados proyectando sombra suave",
+        "caption": "Luz dorada, calor vivo",
         "span": "square"
       },
       {
         "image": "/patoramen/arrozPinaSignature.jpg",
-        "alt": "Shumai dorados en una vaporera negra",
-        "caption": "Shumai de cerdo",
+        "alt": "Arroz frito dorado con maíz, guisantes y hierbas frescas servido dentro de piña tallada y humeante",
+        "caption": "Arroz rebosante",
         "span": "square"
       },
       {
         "image": "/patoramen/conejos.jpg",
-        "alt": "Fideos de ramen levantados con palillos sobre un cuenco con huevo marinado",
-        "caption": "El gesto del ramen",
+        "alt": "Bao al vapor dentro de cestilla de bambú, blancos como la nieve, con salsa oscura al lado esperando",
+        "caption": "Pan nube al vapor",
         "span": "tall"
       },
       {
         "image": "/patoramen/ramen2.jpg",
-        "alt": "Barra nocturna con farolillos japoneses encendidos y botellas al fondo",
-        "caption": "Luz de farolillo",
+        "alt": "Fideos caseros levantados con palillos sobre caldo profundo, carne guisada de ámbar suave y tofu sedoso blanco",
+        "caption": "El instante perfecto",
         "span": "wide"
       }
     ]
