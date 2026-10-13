@@ -11,7 +11,8 @@ const [name, kanji] = brandName.split(' · ');
   data-scrolled="false"
 >
   <nav class="mx-auto flex h-16 max-w-[1440px] items-center justify-between gap-6 px-5 sm:px-8 md:h-20 lg:px-14" aria-label={name}>
-    <a href={nav.brandHref} class="group flex items-baseline gap-3" aria-label={brandName}>
+    <a href={nav.brandHref} class="group flex items-center gap-3" aria-label={brandName}>
+      <img src="/patoramen/logo.png" alt="Pato Ramen logo" class="h-7 w-7 md:h-9 md:w-9 opacity-80 transition-opacity group-hover:opacity-100" />
       <span class="font-serif text-2xl font-medium tracking-tight text-ink md:text-[1.7rem]">{name}</span>
       <span lang="zh-Hans" class="font-cjk text-sm text-primary transition-transform duration-500 group-hover:-translate-y-0.5">{kanji}</span>
     </a>
@@ -35,7 +36,7 @@ const [name, kanji] = brandName.split(' · ');
     </ul>
 
     <div class="flex items-center gap-3">
-      <a href={nav.cta.href} class="btn btn-primary hidden !px-6 !py-3 sm:inline-flex"><span>{nav.cta.label}</span></a>
+      <a href={nav.cta.href} target="_blank" class="btn btn-primary hidden !px-6 !py-3 sm:inline-flex"><span>{nav.cta.label}</span></a>
       <button
         type="button"
         id="menu-toggle"
@@ -65,6 +66,7 @@ const [name, kanji] = brandName.split(' · ');
           <li>
             <a
               href={i.href}
+              target="_blank"
               data-menu-link
               class="flex items-baseline gap-4 border-b border-line/70 py-3 font-serif text-[2.4rem] font-light leading-none text-ink hover:text-primary"
             >
@@ -75,7 +77,7 @@ const [name, kanji] = brandName.split(' · ');
         ))
       }
     </ul>
-    <a href={nav.cta.href} data-menu-link class="btn btn-primary relative mt-8 self-start"><span>{nav.cta.label}</span></a>
+    <a href={nav.cta.href} target="_blank" data-menu-link class="btn btn-primary relative mt-8 self-start"><span>{nav.cta.label}</span></a>
   </div>
 
 <script>

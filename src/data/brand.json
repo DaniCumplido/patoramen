@@ -54,17 +54,17 @@
     }
   },
   "assets": {
-    "heroImage": "https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=2400&q=80&fm=webp",
-    "storyImage": "https://images.unsplash.com/photo-1790102563096-64a25de9e9c0?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "heroImage": "/patoramen/ramenSignature.jpg",
+    "storyImage": "/patoramen/rest1.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1765441012353-10fb4701a276?auto=format&fit=crop&w=2400&q=80&fm=webp",
-      "https://images.unsplash.com/photo-1773559250354-0d7281984a89?auto=format&fit=crop&w=2400&q=80&fm=webp",
+      "/patoramen/patoSignature.jpg",
+      "/patoramen/patoHorno.jpg",
       "https://images.unsplash.com/photo-1601351841251-766245326eee?auto=format&fit=crop&w=2400&q=80&fm=webp",
       "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?auto=format&fit=crop&w=2400&q=80&fm=webp",
       "https://images.unsplash.com/photo-1617870314635-fc819547ec11?auto=format&fit=crop&w=2400&q=80&fm=webp",
       "https://images.unsplash.com/photo-1563245370-63ffc97abdbd?auto=format&fit=crop&w=2400&q=80&fm=webp",
-      "https://images.unsplash.com/photo-1734313276354-75c96b3c0c36?auto=format&fit=crop&w=2400&q=80&fm=webp",
-      "https://images.unsplash.com/photo-1707202282188-f8d03b2791b5?auto=format&fit=crop&w=2400&q=80&fm=webp"
+      "/patoramen/rest1.jpg",
+      "/patoramen/rest1.jpg"
     ],
     "galleryAlt": [
       "Pato tierno de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta, en penumbra cálida",
@@ -78,8 +78,8 @@
     ],
     "decorativeImages": {
       "nightStreet": "https://images.unsplash.com/photo-1740834563801-48f83d978618?auto=format&fit=crop&w=2400&q=80&fm=webp",
-      "carving": "https://images.unsplash.com/photo-1765743691388-6a5608004b9c?auto=format&fit=crop&w=2400&q=80&fm=webp",
-      "shreddedDuck": "https://images.unsplash.com/photo-1782242984132-454270d6dc35?auto=format&fit=crop&w=2400&q=80&fm=webp"
+      "carving": "/patoramen/patoCortado.jpg",
+      "shreddedDuck": "/patoramen/cortarPato.jpg"
     },
     "decorativeImagesAlt": {
       "nightStreet": "Esquina de una calle nocturna con un local japonés iluminado y clientes esperando mesa",
@@ -167,13 +167,13 @@
         "href": "#opiniones"
       },
       {
-        "label": "Pedir",
-        "href": "#pedir"
+        "label": "Pedir en Glovo",
+        "href": "https://glovoapp.com/en/es/barcelona/stores/pato-ramen-barcelona"
       }
     ],
     "cta": {
-      "label": "Pedir",
-      "href": "#pedir"
+      "label": "Pedir en Glovo",
+      "href": "https://glovoapp.com/en/es/barcelona/stores/pato-ramen-barcelona"
     },
     "openMenuLabel": "Abrir menú",
     "closeMenuLabel": "Cerrar menú",
@@ -344,7 +344,7 @@
         "description": "Asado al horno hasta lograr una carne melosa, tierna y profundamente sabrosa. Servido en su jugo de asado con el corte tradicional cantonés, perfecto para disfrutar en raciones de cuarto, medio o entero. Se trincha a la vista, con crepes finas, pepino y hoisin de la casa.",
         "price": "18,95 €",
         "priceNote": "Medio pato · Entero 34,95 €",
-        "image": "https://images.unsplash.com/photo-1765441012353-10fb4701a276?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/patoSignature.jpg",
         "alt": "Pato asado de piel brillante y cobriza, cortado en lonchas sobre bandeja blanca con hojas de menta",
         "tags": [
           "Especialidad de Cantón",
@@ -361,7 +361,7 @@
         "description": "Preparado a fuego lento durante horas, fideos en su punto y una amplia selección de acompañamientos: desde jugoso pato o ternera hasta falda picante, costillas de cerdo, marisco o crujiente pollo rebozado.",
         "price": "9,95 €",
         "priceNote": "Precio promedio ramen",
-        "image": "https://images.unsplash.com/photo-1734313276354-75c96b3c0c36?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/ramenSignature.jpg",
         "alt": "Fideos de ramen levantados con palillos sobre un cuenco con huevo marinado de yema anaranjada y caldo oscuro",
         "tags": [
           "Caldo casero",
@@ -379,7 +379,7 @@
         "description": "Un vistoso salteado al wok de arroz con jugosos trozos de pollo, huevo, maíz, guisantes y zanahoria, saboreado con el toque agridulce y fresco de los dados de piña. Servido directamente en media piña natural recién tallada, una combinación de texturas y colores difícil de encontrar en Barcelona.",
         "price": "12,95 €",
         "priceNote": "Cesta de 4 piezas",
-        "image": "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/arrozPinaSignature.jpg",
         "alt": "Wok de arroz con jugosos trozos de pollo, huevo, maíz, guisantes y zanahoria, saboreado con el toque agridulce y fresco de los dados de piña.",
         "tags": [
           "Pollo y verduras",
@@ -435,12 +435,12 @@
         "label": "conservantes o aditivos"
       }
     ],
-    "image": "https://images.unsplash.com/photo-1790102563096-64a25de9e9c0?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "image": "/patoramen/rest2.jpg",
     "imageAlt": "Barra de madera de un ramen-ya con cuencos apilados, frascos de condimentos y carteles manuscritos en la pared",
     "overlays": [
       {
         "type": "caption",
-        "text": "La cocina, 21:40 h",
+        "text": "La sala, 21:40 h",
         "position": "bottom-left"
       },
       {
@@ -456,9 +456,9 @@
         "opacity": 0.12
       }
     ],
-    "secondaryImage": "https://images.unsplash.com/photo-1767818375229-be50b2b070ef?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "secondaryImage": "/patoramen/patoEnHorno.jpg",
     "secondaryImageAlt": "Cocinero entre patos asados colgados, visto a través de un cristal empañado",
-    "secondaryImageCaption": "El maestro del horno, tras el cristal"
+    "secondaryImageCaption": "Nuestro horno, en cocina"
   },
   "menu": {
     "eyebrow": "La carta",
@@ -1046,28 +1046,32 @@
     ],
     "highlights": [
       {
-        "title": "Bao de cerdo asado",
-        "description": "Pan suave al vapor con cerdo caramelizado.",
-        "image": "https://images.unsplash.com/photo-1504669887860-f6d4cc3feb4b?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Panecillos bao al vapor rellenados con carne de cerdo en salsa caramelizada"
+        "title": "Menú Udon",
+        "description": "1 Principal, 1 entrante, 1 gyoza, 1 bebida y 1 postre.",
+        "image": "/patoramen/menuUdon.jpg",
+        "alt": "Menú Udon con fideos en caldo tradicional",
+        "price": "17,99 €"
       },
       {
-        "title": "Shaomai de cerdo",
-        "description": "Dumpling abierto coronado con huevas.",
-        "image": "https://images.unsplash.com/photo-1563245370-63ffc97abdbd?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Shaomai de cerdo dorados servidos en cesta tradicional"
+        "title": "Menú Arroz Frito",
+        "description": "1 Principal, 1 entrante, 1 bebida y 1 postre.",
+        "image": "/patoramen/menuArroz.jpg",
+        "alt": "Menú Arroz Frito en piña",
+        "price": "17,50 €"
       },
       {
-        "title": "Gyozas de marisco",
-        "description": "Empanadillas rellenas de camarones y calamar.",
-        "image": "https://images.unsplash.com/photo-1779333277496-a5106680169c?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Empanadillas gyozas doradas a la plancha sobre plato de cerámica"
+        "title": "Menú Tallarín",
+        "description": "1 Principal, 1 entrante, 1 bebida y 1 postre.",
+        "image": "/patoramen/menuTallarin.jpg",
+        "alt": "Menú Tallarín con fideos crujientes",
+        "price": "15,50 €"
       },
       {
-        "title": "Takoyaki",
-        "description": "Bolitas crujientes de pulpo.",
-        "image": "https://images.unsplash.com/photo-1759418661781-2b37f26c4573?auto=format&fit=crop&w=2400&q=80&fm=webp",
-        "alt": "Bolitas de takoyaki servidas con salsa tradicional y virutas de bonito"
+        "title": "Menú De Ramen",
+        "description": "1 Ramen, 1 bebida y 1 postre. Nuestro ramen, de tradición china, destaca por el sabor natural de sus caldos caseros.",
+        "image": "/patoramen/menuRamen.jpg",
+        "alt": "Menú De Ramen signature con caldo tradicional",
+        "price": "12,99 €"
       }
     ],
     "downloadMenuLabel": "Descargar carta completa (PDF)",
@@ -1147,7 +1151,7 @@
       "max": 5,
       "count": 70,
       "label": "valoración media",
-      "source": "Media de reseñas (ilustrativa)",
+      "source": "Media de reseñas",
       "_placeholder": false
     }
   },
@@ -1166,49 +1170,49 @@
     "caption": "Una noche cualquiera en Villarroel.",
     "items": [
       {
-        "image": "https://images.unsplash.com/photo-1765441012353-10fb4701a276?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/patoSignature.jpg",
         "alt": "Pato tierno de piel cristalina, cortado en lonchas sobre bandeja blanca con hojas de menta",
         "caption": "Piel, laca, fuego",
         "span": "wide"
       },
       {
-        "image": "https://images.unsplash.com/photo-1773559250354-0d7281984a89?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/ramen.jpg",
         "alt": "Patos y carnes lacadas colgando tras un cristal empañado, iluminados por focos cálidos",
         "caption": "Colgados a la espera",
         "span": "tall"
       },
       {
-        "image": "https://images.unsplash.com/photo-1601351841251-766245326eee?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/rest2.jpg",
         "alt": "Barra de izakaya con farolillos de papel rojos y cocineros trabajando bajo luz ámbar",
         "caption": "La barra, a plena marcha",
         "span": "wide"
       },
       {
-        "image": "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/mesa.jpg",
         "alt": "Vapor ascendiendo de una cesta de bambú con dumplings junto a un cuenco de salsa",
         "caption": "Vapor a contraluz",
         "span": "tall"
       },
       {
-        "image": "https://images.unsplash.com/photo-1617870314635-fc819547ec11?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/rest1.jpg",
         "alt": "Callejón nocturno con farolillos rojos y rótulos iluminados",
         "caption": "Después de la última ronda",
         "span": "square"
       },
       {
-        "image": "https://images.unsplash.com/photo-1563245370-63ffc97abdbd?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/arrozPinaSignature.jpg",
         "alt": "Shumai dorados en una vaporera negra",
-        "caption": "Shumai de gamba",
+        "caption": "Shumai de cerdo",
         "span": "square"
       },
       {
-        "image": "https://images.unsplash.com/photo-1734313276354-75c96b3c0c36?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/conejos.jpg",
         "alt": "Fideos de ramen levantados con palillos sobre un cuenco con huevo marinado",
         "caption": "El gesto del ramen",
         "span": "tall"
       },
       {
-        "image": "https://images.unsplash.com/photo-1707202282188-f8d03b2791b5?auto=format&fit=crop&w=2400&q=80&fm=webp",
+        "image": "/patoramen/ramen2.jpg",
         "alt": "Barra nocturna con farolillos japoneses encendidos y botellas al fondo",
         "caption": "Luz de farolillo",
         "span": "wide"
@@ -1234,7 +1238,7 @@
       }
     ],
     "copy": "Nuestra cocina está lista tanto si prefieres acompañarnos en el local como si deseas recibir un tazón humeante en la puerta de tu hogar.",
-    "image": "https://images.unsplash.com/photo-1601351841251-766245326eee?auto=format&fit=crop&w=2400&q=80&fm=webp",
+    "image": "/patoramen/rest3.jpg",
     "imageAlt": "Barra de izakaya con farolillos de papel rojos",
     "platforms": [
       {
@@ -1246,13 +1250,13 @@
       {
         "name": "Rice",
         "label": "Pedir en Rice",
-        "href": "https://riceapp.com",
+        "href": "https://rice.rocks",
         "description": "Comida de calidad a domicilio"
       },
       {
         "name": "AIO",
         "label": "Pedir en AIO",
-        "href": "https://aioapp.com",
+        "href": "https://play.google.com/store/apps/details?id=com.aioall.waimai&hl=es",
         "description": "Tu comida favorita entregada"
       }
     ],
@@ -1273,7 +1277,7 @@
         ]
       },
       {
-        "title": "Horarios",
+        "title": "Horario",
         "lines": [
           "Lunes – Domingo · 12:30 – 16:00 · 19:00 – 23:30"
         ]

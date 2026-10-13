@@ -74,10 +74,15 @@ const hoursTitle = footer.columns[1].title;
   <div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col justify-between px-5 pb-12 pt-28 sm:px-8 md:pb-16 md:pt-36 lg:px-20">
     <!-- Location badge -->
     <div data-hero-fade>
-      <span class="inline-flex items-center gap-2.5 rounded-full border border-ink/20 bg-background/50 px-4 py-2 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink backdrop-blur-md">
+      <a
+        href={`https://www.google.com/maps/place/Pato+Ramen+Restaurante+%E7%BC%98%E5%91%B3/@41.3920688,2.1475044,21z/data=!3m1!5s0x12a4a29d279a9d49:0xca7853ddc35d35c3!4m15!1m8!3m7!1s0x12a4a29cd86102a9:0x4dbf73d10aad1764!2sC.+de+Villarroel,+255,+Eixample,+08036+Barcelona!3b1!8m2!3d41.3920132!4d2.1475471!16s%2Fg%2F11rg65qz6w!3m5!1s0x12a4a3802e04c34f:0xb2d3ae8d9387f918!8m2!3d41.3920132!4d2.1475471!16s%2Fg%2F11zddzsywb?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2.5 rounded-full border border-ink/20 bg-background/50 px-4 py-2 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink backdrop-blur-md transition-colors hover:bg-background/80 hover:text-primary"
+      >
         <MapPin className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
         {hero.badge}
-      </span>
+      </a>
     </div>
 
     <div class="mt-16 grid items-end gap-12 lg:grid-cols-12">

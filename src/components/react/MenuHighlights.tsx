@@ -56,6 +56,11 @@ export default function MenuHighlights() {
                     className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.07]"
                   />
                   <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                  {h.price && (
+                    <div className="absolute right-0 top-0 bg-primary/90 px-4 py-2 font-serif text-xl font-medium text-background">
+                      {h.price}
+                    </div>
+                  )}
                   <div className="absolute inset-x-0 bottom-0 p-5">
                     <h3 className="font-serif text-3xl font-light leading-none text-ink">{h.title}</h3>
                     <p className="mt-2 text-sm leading-snug text-ink/85">{h.description}</p>
