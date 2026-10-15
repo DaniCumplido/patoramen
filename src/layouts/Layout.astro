@@ -1,6 +1,7 @@
 ---
 import brand from '../data/brand.json';
 import '../styles/global.css';
+import Analytics from '@vercel/analytics/astro';
 import {
   absolute,
   breadcrumbNode,
@@ -142,5 +143,6 @@ const jsonLd = graph(nodes);
     <script>
       import '../scripts/animations';
     </script>
+    <Analytics />
   </body>
 </html>
